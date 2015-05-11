@@ -1,0 +1,44 @@
+---
+---
+
+.home
+	padding: 40px 0
+	margin-top: 2px
+.justify-align
+	text-align: justify
+.job-img
+	text-align: center
+	img
+		max-width: 100%
+		max-height: 100px
+
+/* label color */
+.input-field label
+	color: #231f20
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label
+	color: #2962ff
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=email]:focus
+	border-bottom: 1px solid #2962ff
+	box-shadow: 0 1px 0 0 #2962ff
+/* valid color */
+.input-field input[type=text].valid, .input-field input[type=email].valid
+	border-bottom: 1px solid #2962ff
+	box-shadow: 0 1px 0 0 #2962ff
+/* invalid color */
+.input-field input[type=text].invalid, .input-field input[type=email].invalid
+	border-bottom: 1px solid #d50000
+	box-shadow: 0 1px 0 0 #d50000
+/* icon prefix focus color */
+.input-field .prefix.active
+	color: #2962ff
+
+textarea.materialize-textarea:focus:not([readonly]) + label
+	color: #2962ff
+textarea.materialize-textarea:focus:not([readonly])
+	border-bottom: 1px solid #2962ff
+	box-shadow: 0 1px 0 0 #2962ff
+
+.page-footer
+	padding: 1px 0
