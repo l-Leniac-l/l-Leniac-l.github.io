@@ -11,5 +11,6 @@ icons:
     - title: "Bootstrap"
       src: "bootstrap.jpg"
 description: "Criação do site da Confete Kids Club. Codificação do front-end do site."
+description_us: "Creation of a site to Confete Kids Club of Ipatinga-MG, Brazil. I coded the front-end."
 link: "http://www.confetekids.com.br/"
 ---

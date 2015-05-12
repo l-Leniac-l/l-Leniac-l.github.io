@@ -11,5 +11,6 @@ icons:
     - title: "Bootstrap"
       src: "bootstrap.jpg"
 description: "Criação do novo site da Agência de Modelos Black White Estilo. Codificação do front-end do site."
+description_us: "Creation of a new site to Black White Estilo Model's Agency. I coded the front-end."
 link: "http://agenciablackwhite.com/"
 ---

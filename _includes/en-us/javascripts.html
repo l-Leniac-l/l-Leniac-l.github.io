@@ -2,8 +2,23 @@
 <script type="text/javascript" src="/{{ site.js_folder }}/materialize.min.js"></script>
 <script type="text/javascript">
 	$( document ).ready(function(){
-		$(".button-collapse").sideNav(); // Starts mobile menu
-		// Send mail form
+		/*
+		* Scripts para scroll do menu
+		*/
+		$("#menu li a:not([language]), #mobileMenu li a:not([language]), #start-button").click(function(event){
+			event.preventDefault();
+			var target = $(this).attr('href').trim();
+			console.log(target);
+			$('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 1000);
+		});
+		// inicia o menu mobile
+		$(".button-collapse").sideNav(); 
+
+		/*
+		* Script para envio do email de contato
+		*/
 		$("#contactForm").submit(function(event){
 			event.preventDefault();
 			var $email = $("#email").val();
@@ -43,6 +58,6 @@
 					$('#modal2').openModal();
 				}
 			});
-		});			
+		});		
 	});	
 </script>

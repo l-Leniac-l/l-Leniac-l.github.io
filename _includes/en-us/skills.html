@@ -1,32 +1,32 @@
 <section id="skills">
 	<div class="container">
-		<h1 class="blue-text accent-4 center-align"><u>Minhas Habilidades</u></h1>
+		<h1 class="blue-text accent-4 center-align"><u>My Skills</u></h1>
 		<div class="row">
 			<div class="col s12 m4 l4">
 				<div class="center-align red accent-1 white-text"><i class="large mdi-editor-border-color"></i></div>
 				<h4 class="center-align">Design</h4>
 				<p class="center-align">
-					Sou apaixonado por Usabilidade e UX Design. Adoro sites minimalistas, designs inovadores e interfaces limpas e simples. Gosto de criar wireframes, ou mesmo desenhar layouts no photoshop.
+					I love Usability e UX Design. I like minimalist websites, innovator design and clean interfaces. I like make wireframes, or only draw in Photoshop.
 				</p>
 			</div>
 			<div class="col s12 m4 l4">
 				<div class="center-align red accent-1 white-text"><i class="large mdi-action-settings"></i></div>
-				<h4 class="center-align">Desenvolvimento</h4>
+				<h4 class="center-align">Development</h4>
 				<p class="center-align">
-					Sou amante e pregador dos padrões web. Gosto de criar códigos limpos e organizados, com otimização para rápido carregamento, e fidelidade ao layout.
+					I'm a lover and preacher of web patterns. I like to do clean and organized code, with fast loading and fidelity to layout.
 				</p>
 			</div>
 			<div class="col s12 m4 l4">
 				<div class="center-align red accent-1 white-text"><i class="large mdi-social-share"></i></div>
-				<h4 class="center-align">Compartilhar</h4>
+				<h4 class="center-align">Share</h4>
 				<p class="center-align">
-					Como um bom estudante, estou sempre me atualizando sobre as novidades da web. Além disso escrevo artigos sobre o assunto, compartilho com as pessoas através de palestras, ou até mesmo uma conversinha durante o café.
+					As a good student, I'm always updating me about the web development news. I write about this, and I share with ohter people in lectures or a little talk in coffee break.
 				</p>
 			</div>
-			<h2 class="center-align">Como me avalio</h2>
-			<p class="center-align">Abaixo segue uma amostra de como me avalio em determinadas coisas, de 0 a 100%:</p>
+			<h2 class="center-align">How I see myself</h2>
+			<p class="center-align">Below is a sample of how to evaluate me in certain things. (0 - 100%):</p>
 			<div class="col s12 m6 l6">
-				<h4>Linguagens:</h4>
+				<h4>Languages:</h4>
 				{% for skill in site.skills %}
 					{% if skill.type == "1" %}
 						<div>
@@ -39,7 +39,7 @@
 				{% endfor %}
 			</div>
 			<div class="col s12 m6 l6">
-				<h4>Frameworks e Ferramentas:</h4>
+				<h4>Frameworks e Tools:</h4>
 				{% for skill in site.skills %}
 					{% if skill.type == "2" %}
 						<div>

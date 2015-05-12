@@ -1,11 +1,11 @@
 <footer class="page-footer grey darken-4">
 	<div class="container">
-		<h5 class="center-align white-text">Encontre-me nas redes sociais!</h5>
+		<h5 class="center-align white-text">Find me on social networks!</h5>
 		<div class="row">
 			<div class="col s12 m4 l4 offset-m4 offset-l4 center-align">
 				{% for social in site.social_networks %}
 					<a href="{{social.link}}" title="{{social.name}}" target="_blank">
-						<img src="{{site.img_folder}}/{{social.img}}">
+						<img src="/{{site.img_folder}}/{{social.img}}">
 					</a>
 				{% endfor %}
 			</div>
@@ -22,7 +22,7 @@
 		</div>
 		<div class="row white-text">
 			<p class="center-align">
-            	Site construído orgulhosamente por mim, utilizando conceitos do Google Material Design.
+            	This website was built with pride for me, using Google Material Design Concepts.
             </p>
       	</div>
 	</div>
