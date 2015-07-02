@@ -49,7 +49,10 @@
 			      		'html': $message
 		    		}
 	  			}
+			}).beforeSend(function(){
+				$('#modal0').openModal();
 			}).done(function(response) {
+				$('#modal0').closeModal();
 				if(response[0].status == 'sent'){
 					$('#modal1').openModal();
 				}
