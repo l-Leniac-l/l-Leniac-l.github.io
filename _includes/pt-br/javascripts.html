@@ -48,9 +48,10 @@
 			      		'subject': 'Contato do site LNLWD.com',
 			      		'html': $message
 		    		}
-	  			}
-			}).beforeSend(function(){
-				$('#modal0').openModal();
+	  			},
+	  			beforeSend: function() {
+			        $('#modal0').openModal();
+			    }
 			}).done(function(response) {
 				$('#modal0').closeModal();
 				if(response[0].status == 'sent'){
