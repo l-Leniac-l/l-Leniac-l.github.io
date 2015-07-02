@@ -1,5 +1,5 @@
 ---
 title: "AngularJS"
-value: "80%"
+value: "70%"
 type: "2"
 ---
