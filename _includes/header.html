@@ -1,0 +1,30 @@
+<header class="navbar-fixed">
+	<nav class="white">
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo center"><img src="{{ site.img_folder }}/logo.png" width="120"/></a>
+			<a href="#" data-activates="mobileMenu" class="button-collapse blue-text accent-4"><i class="mdi-navigation-menu"></i></a>
+			<ul class="left hide-on-med-and-down" id="menu">
+				<li><a href="#home" class="blue-text accent-4">{%t pages.home %}</a></li>
+				<li><a href="#skills" class="blue-text accent-4">{%t pages.skills %}</a></li>
+				<li><a href="#jobs" class="blue-text accent-4">{%t pages.jobs %}</a></li>
+				<li><a href="#contact" class="blue-text accent-4">{%t pages.contact %}</a></li>
+				{% if site.lang == "pt_br" %}
+					<li><a href="/en_us/" class="blue-text accent-4" language>English (US)</a></li>
+        {% else if site.lang == "en_us" %}
+          <li><a href="/" class="blue-text accent-4" language>Português (BR)</a></li>
+        {% endif %}
+			</ul>
+			<ul class="side-nav" id="mobileMenu">
+        <li><a href="#home" class="blue-text accent-4">{%t pages.home %}</a></li>
+				<li><a href="#skills" class="blue-text accent-4">{%t pages.skills %}</a></li>
+				<li><a href="#jobs" class="blue-text accent-4">{%t pages.jobs %}</a></li>
+				<li><a href="#contact" class="blue-text accent-4">{%t pages.contact %}</a></li>
+				{% if site.lang == "pt_br" %}
+					<li><a href="/en_us/" class="blue-text accent-4" language>English (US)</a></li>
+        {% else if site.lang == "en_us" %}
+          <li><a href="/" class="blue-text accent-4" language>Português (BR)</a></li>
+        {% endif %}
+			</ul>
+		</div>
+	</nav>
+</header>

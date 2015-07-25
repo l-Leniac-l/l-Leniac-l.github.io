@@ -6,11 +6,11 @@
 				<article class="col s12 m6 l6">
 					<h4 class="center-align">{{job.title}}</h4>
 					<div class="col s8 m8 l8 job-img">
-						<img src="/{{ site.img_folder }}/{{job.img}}"/>
+						<img src="{{ site.img_folder }}/{{job.img}}"/>
 					</div>
 					<div class="col s4 m4 l4">
 						{% for icon in job.icons %}
-							<img src="/{{ site.img_folder }}/{{ icon.src }}" alt="{{ icon.title }}" width="50" title="{{ icon.title }}"/>
+							<img src="{{ site.img_folder }}/{{ icon.src }}" alt="{{ icon.title }}" width="50" title="{{ icon.title }}"/>
 						{% endfor %}
 					</div>
 					<div class="col s12 m12 l12">

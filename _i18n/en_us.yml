@@ -1,0 +1,9 @@
+global:
+  english: English
+pages:
+  home: Home
+  skills: Skills
+  jobs: Jobs
+  contact: Contact
+titles:
+  home: Home

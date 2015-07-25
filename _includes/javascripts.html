@@ -14,7 +14,7 @@
             }, 1000);
 		});
 		// inicia o menu mobile
-		$(".button-collapse").sideNav(); 
+		$(".button-collapse").sideNav();
 
 		/*
 		* Script para envio do email de contato
@@ -48,12 +48,8 @@
 			      		'subject': 'Contato do site LNLWD.com',
 			      		'html': $message
 		    		}
-	  			},
-	  			beforeSend: function() {
-			        $('#modal0').openModal();
-			    }
+	  			}
 			}).done(function(response) {
-				$('#modal0').closeModal();
 				if(response[0].status == 'sent'){
 					$('#modal1').openModal();
 				}
@@ -62,6 +58,6 @@
 					$('#modal2').openModal();
 				}
 			});
-		});		
-	});	
+		});
+	});
 </script>

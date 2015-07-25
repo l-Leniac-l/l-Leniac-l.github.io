@@ -5,7 +5,7 @@ description: Lenilson Nascimento. Front-end Developer, apaixonado por usabilidad
 description_us: Lenilson Nascimento. Front-end Developer, in love by usability and web patterns.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://lnlwd.com" # the base hostname & protocol for your site
-social_networks:    
+social_networks:
     - name: "Twitter"
       link: "https://twitter.com/thelenilson"
       img: "twitter.png"
@@ -23,10 +23,12 @@ age: '20'
 exp_time: '2'
 
 # Build settings
+languages: ["pt_br", "en_us"]
+exclude_from_localizations: ["assets"]
 markdown: kramdown
-css_folder:  'assets/css'
-js_folder:  'assets/js'
-img_folder:  'assets/img'
+css_folder:  '/assets/css'
+js_folder:  '/assets/js'
+img_folder:  '/assets/img'
 sass:
     style: compressed
 collections:
