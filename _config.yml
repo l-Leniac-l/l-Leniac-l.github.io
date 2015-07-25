@@ -24,8 +24,6 @@ exp_time: '2'
 
 # Build settings
 languages: ["pt_br", "en_us"]
-gems:
-- jekyll-multiple-languages-plugin
 exclude_from_localizations: ["assets"]
 markdown: kramdown
 css_folder:  '/assets/css'
