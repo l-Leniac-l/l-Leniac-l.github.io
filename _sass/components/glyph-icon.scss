@@ -1,0 +1,13 @@
+.glyph-icon {
+  &::before {
+    display: block;
+    padding: 0.1em;
+    font-size: 2em;
+    font-weight: lighter;
+  }
+  &.-menu {
+    display: inline-block;
+    padding: 0.7em;
+    color: $text-color-1;
+  }
+}

@@ -4,6 +4,9 @@
 @charset "utf-8";
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+  "variables",
   "reset",
-  "syntax-highlighting"
+  "syntax-highlighting",
+  "components/glyph-icon",
+  "components/main-menu"
 ;

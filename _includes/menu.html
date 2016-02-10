@@ -1,15 +1,43 @@
-<aside>
-  <header>
-
+<aside class="main-menu">
+  <header class="header">
+    <figure class="cover">
+      <img src="/assets/img/cover.jpg" class="image"/>
+    </figure>
+    <h1 class="name">Lenilson Nascimento</h1>
+    <p class="position">UX Designer and Front end Developer</p>
   </header>
-  <nav>
-    <a href="/">Blog</a>
-    <a href="/">About</a>
-    <a href="/">Projects</a>
-    <a href="/">Talks</a>
-    <a href="/">Portfolio</a>
+  <nav class="nav">
+    <a href="/" class="link{% if page.url == '/index.html' %} active{% endif %}">Blog</a>
+    <a href="/about/" class="link{% if page.url == '/about/' %} active{% endif %}">About</a>
+    <a href="/projects/" class="link{% if page.url == '/projects/' %} active{% endif %}">Projects</a>
+    <a href="/talks/" class="link{% if page.url == '/talks/' %} active{% endif %}">Talks</a>
+    <a href="/portfolio/" class="link{% if page.url == '/portfolio/' %} active{% endif %}">Portfolio</a>
   </nav>
-  <footer>
-    
+  <footer class="footer">
+    <hr/>
+    <a href="https://www.facebook.com/lnlwd" title="Facebook" target="_blank">
+      <i class="glyph-icon flaticon-social122 -menu"></i>
+    </a>
+    <a href="https://twitter.com/thelenilson" title="Twitter" target="_blank">
+      <i class="glyph-icon flaticon-social136 -menu"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/lenilson-nascimento-89972395" title="Linkedin" target="_blank">
+      <i class="glyph-icon flaticon-social123 -menu"></i>
+    </a>
+    <a href="https://www.github.com/lnlwd" title="Github" target="_blank">
+      <i class="glyph-icon flaticon-cat6 -menu"></i>
+    </a>
+    <a href="https://www.behance.net/thelenilson" title="Behance" target="_blank">
+      <i class="glyph-icon flaticon-behance11 -menu"></i>
+    </a>
+    <a href="https://pinterest.com/thelenilson/" title="Pinterest" target="_blank">
+      <i class="glyph-icon flaticon-pinterest32 -menu"></i>
+    </a>
+    <a href="mailto:me@lnlwd.com" title="Mail me">
+      <i class="glyph-icon flaticon-new89 -menu"></i>
+    </a>
+    <a href="#" title="Facebook" target="_blank">
+      <i class="glyph-icon flaticon-rss44 -menu"></i>
+    </a>
   </footer>
 </aside>

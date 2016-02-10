@@ -1,0 +1,58 @@
+.main-menu {
+  position: fixed;
+  width: 20em;
+  height: 100%;
+  background-color: $base-color-1;
+  text-align: center;
+
+  > .header {
+    color: $text-color-1;
+
+    > .cover {
+      width: 14em;
+      height: 14em;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0.5em 0 0.5em 3em;
+    }
+
+    > .name {
+      font-weight: normal;
+      font-size: 1.4em;
+      margin: 0.2em;
+    }
+
+    > .position {
+      font-weight: lighter;
+      font-size: 0.9em;
+      font-style: italic;
+    }
+  }
+
+  > .nav {
+    margin: 1em 0 1em 0;
+
+    > .link {
+      display: block;
+      width: 100%;
+      height: 2em;
+      margin-top: 0.1em;
+      line-height: 2em;
+      color: $text-color-1;
+      text-decoration: none;
+      &:hover,
+      &.active{
+        background-color: $base-color-2;
+      }
+    }
+  }
+
+  > .footer {
+
+    > hr {
+      width: 70%;
+      height: 1px;
+    }
+  }
+
+}
