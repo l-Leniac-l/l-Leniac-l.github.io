@@ -7,11 +7,13 @@
     <p class="position">UX Designer and Front end Developer</p>
   </header>
   <nav class="nav">
-    <a href="/" class="link{% if page.url == '/index.html' %} active{% endif %}">Blog</a>
-    <a href="/about/" class="link{% if page.url == '/about/' %} active{% endif %}">About</a>
-    <a href="/projects/" class="link{% if page.url == '/projects/' %} active{% endif %}">Projects</a>
-    <a href="/talks/" class="link{% if page.url == '/talks/' %} active{% endif %}">Talks</a>
-    <a href="/portfolio/" class="link{% if page.url == '/portfolio/' %} active{% endif %}">Portfolio</a>
+    {% for nav_item in site.data.nav %}
+      {% if page.url == nav_item.link %}
+        <a href="{{ nav_item.link }}" class="link active">{{ nav_item.name }}</a>
+      {% else %}
+        <a href="{{ nav_item.link }}" class="link">{{ nav_item.name }}</a>
+      {% endif %}
+    {% endfor %}
   </nav>
   <footer class="footer">
     <hr/>
