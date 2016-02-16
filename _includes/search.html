@@ -1,6 +1,23 @@
 <section class="search-area">
-  <form action="search_results.html" method="get" id="search_form">
-    <input type="text" id="search_box" name="query">
-    <input type="submit" value="search">
-  </form>
+  {% if page.url != '/' %}
+  <section class="home">
+    <a href="/" title="Home"><i class="glyph-icon flaticon-home168"></i></a>
+  </section>
+  {% endif %}
+  <section class="form">
+    <a href="#" class="open" data-target"#search_form"><i class="glyph-icon flaticon-magnifying-glass34"></i></a>
+    <form action="search_results.html" method="get" id="search_form">
+      <input type="hidden" value="1" name="a">
+      <input type="text" id="search_box" name="query">
+      <input type="submit" value="search">
+    </form>
+  </section>
+  <section class="tags">
+    <a href="#" class="open" data-target"#tag_list"><i class="glyph-icon flaticon-label49"></i></a>
+    <ul class="list" id="tag_list">
+      {% for tag in site.data.tag %}
+        <a href="/search_results.html?a=2&tag={{tag.name}}">{{tag.name}}</a>
+      {% endfor %}
+    </ul>
+  </section>
 </section>
