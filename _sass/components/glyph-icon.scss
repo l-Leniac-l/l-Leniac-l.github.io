@@ -15,6 +15,10 @@
     color: $base-color-1;
     font-size: 0.8em;
   }
+  &.-tag {
+    color: $base-color-1;
+    font-size: 0.6em;
+  }
   &.-input {
     position: absolute;
     z-index: 0;

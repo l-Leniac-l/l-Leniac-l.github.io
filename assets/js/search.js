@@ -50,7 +50,7 @@ var searchEngine = {
     var results = null;
     var msg_success = null;
     var msg_error = null;
-    
+
     if(tag === true) {
       results = searchEngine.index_tag.search(query);
     } else {
@@ -62,8 +62,8 @@ var searchEngine = {
         searchEngine.post_list.empty();
         results.forEach(function(result) {
           var item = loaded_data[result.ref];
-          var appendString = '<h1>Showing results for "'+query+'"</h1>'+
-          '<article class="post">'+
+          var appendString = '<h1 class="search_msg">Showing results for "'+query+'"</h1>'+
+          '<article class="post -search">'+
           '<h1 class="title">' + item.title + '</h1>'+
           '<p class="description">' + item.description + '</p>'+
           '<a href="'+ item.url + '" class="link">Continue Reading</a>'+
@@ -71,7 +71,7 @@ var searchEngine = {
           searchEngine.post_list.append(appendString);
         });
       } else {
-        searchEngine.post_list.html('<h1>No results found for "'+query+'"</h1>');
+        searchEngine.post_list.html('<h1 class="search_msg">No results found for "'+query+'"</h1>');
       }
     });
   }
