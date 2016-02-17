@@ -2,6 +2,7 @@
   position: fixed;
   width: 3em;
   height: 100%;
+  padding: 0.5em 0;
   background-color: lighten($base-color-2,55%);
   text-align: center;
 
@@ -28,6 +29,8 @@
     > .form {
       position: absolute;
       visibility: hidden;
+      transition: all ease 0.5s;
+      opacity: 0;
       top: 0;
       left: 3.1em;
       width: 25em;
@@ -66,6 +69,8 @@
     > .list {
       position: absolute;
       visibility: hidden;
+      transition: all ease 0.5s;
+      opacity: 0;
       top: 0;
       left: 3.1em;
       width: auto;

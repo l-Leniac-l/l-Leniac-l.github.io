@@ -2,13 +2,14 @@ var generalScripts = {
   open: function() {
     $('.open').on('click', function() {
       var $target = $(this).attr('data-target');
-      /*var target = document.getElementById($target);
-      if(target.style.visibility = 'hidden') {
-        target.style.visibility = 'visible';
-      } else if(target.style.visibility = 'visible') {
-        target.style.visibility = 'hidden';
-      }*/
-      $($target).css('visibility','visible');
+      if($($target).css('visibility') == 'hidden') {
+        $($target).css('visibility','visible')
+        $($target).css('opacity','1')
+      }else if($($target).css('visibility') == 'visible') {
+        $($target).css('visibility','hidden')
+        $($target).css('opacity','0')
+      }
+      //alert($($target).css('visibility'));
     })
   }
 }
