@@ -51,3 +51,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@mixin reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}

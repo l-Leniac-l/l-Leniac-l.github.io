@@ -60,10 +60,11 @@ var searchEngine = {
     searchEngine.data.then(function(loaded_data){
       if(results.length) {
         searchEngine.post_list.empty();
+        var appendString1 = '<h1 class="search_msg">Showing results for "'+query+'"</h1>';
+        searchEngine.post_list.append(appendString1);
         results.forEach(function(result) {
           var item = loaded_data[result.ref];
-          var appendString = '<h1 class="search_msg">Showing results for "'+query+'"</h1>'+
-          '<article class="post -search">'+
+          var appendString = '<article class="post -search">'+
           '<h1 class="title">' + item.title + '</h1>'+
           '<p class="description">' + item.description + '</p>'+
           '<a href="'+ item.url + '" class="link">Continue Reading</a>'+
