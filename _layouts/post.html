@@ -6,7 +6,15 @@ layout: default
   <article class="post-content">
     <header class="header">
       <h1 class="title">{{ page.title }}</h1>
-      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <p class="meta">
+        {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}
+      </p>
+      <ul class="tagList">
+        <li class="glyph-icon flaticon-label49 -tag tag"></li>
+        {% for tag in page.tags %}
+        <li class="tag"><a href="/search_results.html?a=2&tag={{tag}}">{{tag}}</a>{% unless forloop.last %} ,{% endunless %}</li>
+        {% endfor %}
+      </ul>
       {% if page.image %}
         <figure class="image">
           <img src="{{page.image}}" {% if post.image-title %}alt="{{page.image-title}}"{% endif %} />
