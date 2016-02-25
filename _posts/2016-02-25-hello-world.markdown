@@ -1,5 +1,6 @@
 ---
 layout: post
+parent: /
 title:  "Hello World"
 description: "This post description is too short."
 date:   2016-02-25 15:44:12
