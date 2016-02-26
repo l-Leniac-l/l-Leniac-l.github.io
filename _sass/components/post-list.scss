@@ -36,6 +36,10 @@
       font-size: 2em;
       font-weight: lighter;
 
+      > .term {
+        background-color: #FFEB3B;
+      }
+
       > .link {
         color: $base-color-1;
         text-decoration: none;
@@ -62,6 +66,10 @@
       font-size: 1em;
       font-weight: normal;
       text-align: justify;
+
+      > .term {
+        background-color: #FFEB3B;
+      }
     }
 
     > .link {

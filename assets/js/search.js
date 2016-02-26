@@ -45,6 +45,16 @@ var searchEngine = {
     }
   },
 
+  highlight: function(query, text) {
+    var pos = null;
+    var result = null;
+    if(text.toLowerCase().match(query.toLowerCase())) {
+      pos = text.toLowerCase().indexOf(query.toLowerCase());
+      result = text.substr(pos,query.length);
+    }
+    return result;
+  },
+
   perform: function(query,tag=false){
     searchEngine.populate();
     var results = null;
@@ -65,8 +75,8 @@ var searchEngine = {
         results.forEach(function(result) {
           var item = loaded_data[result.ref];
           var appendString = '<article class="post -search">'+
-          '<h1 class="title">' + item.title + '</h1>'+
-          '<p class="description">' + item.description + '</p>'+
+          '<h1 class="title">' + item.title.split(searchEngine.highlight(query,item.title)).join('<span class="term">'+searchEngine.highlight(query,item.title)+'</span>') + '</h1>'+
+          '<p class="description">' + item.description.split(searchEngine.highlight(query,item.description)).join('<span class="term">'+searchEngine.highlight(query,item.description)+'</span>') + '</p>'+
           '<a href="'+ item.url + '" class="link">Continue Reading</a>'+
           '</article>';
           searchEngine.post_list.append(appendString);
