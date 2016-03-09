@@ -12,6 +12,11 @@ github_username:  lnlwd
 # Build settings
 markdown: kramdown
 
+exclude:
+  - node_modules
+  - package.json
+  - gulpfile.js
+
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
