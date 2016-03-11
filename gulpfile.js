@@ -20,6 +20,7 @@ gulp.task('stylus', () => {
   gulp.src('_css/style.styl')
     .pipe(sourcemaps.init())
     .pipe(stylus({
+      'include css': true,
       use: [
         poststylus([rucksack({autoprefixer: true})])
       ]
@@ -40,6 +41,7 @@ gulp.task('minifyCss', () => {
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['serve',
     '--watch',
+    '--incremental'
   ]);
 
   const jekyllLogger = (buffer) => {

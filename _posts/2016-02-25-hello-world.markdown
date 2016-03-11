@@ -5,7 +5,7 @@ title:  "Hello World"
 description: "This post description is too short."
 date:   2016-02-25 15:44:12
 tags: design development jekyll
-permalink: hello-world
+permalink: hello-world/
 author: Lenilson
 ---
 
@@ -31,7 +31,7 @@ A line with simple `syntax highlight`.
 
 Following a syntax highlight block:
 
-{% highlight javascript linenos %}
+{% highlight js %}
 // Comment
 var name;
 const name2;
