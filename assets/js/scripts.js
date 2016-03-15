@@ -6,6 +6,9 @@ var generalScripts = {
       if($($target).css('visibility') == 'hidden') {
         $($target).css('visibility','visible')
         $($target).css('opacity','1')
+        setTimeout(function() {
+          $($target).children('#search_box').focus()
+        }, 100);
       }else if($($target).css('visibility') == 'visible') {
         $($target).css('visibility','hidden')
         $($target).css('opacity','0')
