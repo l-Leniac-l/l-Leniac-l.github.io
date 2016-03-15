@@ -1,19 +1,19 @@
 <section class="search-area">
   {% if page.url != '/' %}
   <section class="home">
-    <a href="/" title="Home" class="link"><i class="glyph-icon flaticon-home168 -search"></i></a>
+    <a href="/" title="Home" class="link"><i class="glyph-icon flaticon-internet -search"></i></a>
   </section>
   {% endif %}
   <section class="search">
-    <a href="#" class="open" data-target="#search_form"><i class="glyph-icon flaticon-magnifying-glass34 -search"></i></a>
+    <a href="#" class="open" data-target="#search_form"><i class="glyph-icon flaticon-search -search"></i></a>
     <form action="search_results.html" method="get" id="search_form" class="form">
       <input type="hidden" value="1" name="a">
       <input type="text" id="search_box" name="query" class="input" required="required">
-      <input type="submit" value=" " class="button"><i class="glyph-icon flaticon-magnifying-glass34 -input"></i></input>
+      <input type="submit" value=" " class="button"><i class="glyph-icon flaticon-search -input"></i></input>
     </form>
   </section>
   <section class="tags">
-    <a href="#" class="open" data-target="#tag_list"><i class="glyph-icon flaticon-label49 -search"></i></a>
+    <a href="#" class="open" data-target="#tag_list"><i class="glyph-icon flaticon-commerce -search"></i></a>
     <ul class="list" id="tag_list">
       {% for tag in site.data.tag %}
         <li class="tag"><a href="/search_results.html?a=2&tag={{tag.name}}" class="link">{{tag.name}}</a></li>

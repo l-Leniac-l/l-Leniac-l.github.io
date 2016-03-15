@@ -1,3 +1,57 @@
 .main-menu
-  width 40%
-  height 100%
+  ds flex
+  flex-direction column
+  po fixed
+  bg base-color-1
+  wi 20%
+  he 100%
+  flex 1
+  font-family "Open Sans"
+  ta center
+
+  > .header
+    cl text-color-1
+    wi 100%
+    he 50%
+    order 1
+
+    > .cover
+      wi 75%
+      he 70%
+      bor 50%
+      overflow hidden
+      ma 5% 12%
+
+    > .name
+      fw normal
+      fs responsive 12px 18px
+
+    > .position
+      fw lighter
+      fs responsive 8px 14px
+
+  > .nav
+    order 2
+
+    > .link
+      ds block
+      wi 100%
+      he 2em
+      margin-top 0.1em
+      lh 2em
+      fs responsive 10px 16px
+      cl text-color-1
+      td none
+      &:hover,
+      &.active
+        bg base-color-2
+
+  > .footer
+    wi 100%
+    order 3
+
+    > hr
+      wi 80%
+      he 1px
+      bg text-color-1
+      bo none

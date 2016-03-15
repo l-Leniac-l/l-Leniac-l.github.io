@@ -16,7 +16,7 @@ layout: default
         <p class="description">{{ post.description }}</p>
         <a href="{{ post.url | prepend: site.baseurl }}" class="link">Continue Reading</a>
         <ul class="tagList">
-          <li class="glyph-icon flaticon-label49 -tag tag"></li>
+          <li class="glyph-icon flaticon-commerce -tag tag"></li>
           {% for tag in post.tags %}
           <li class="tag"><a href="/search_results.html?a=2&tag={{tag}}">{{tag}}</a>{% unless forloop.last %} ,{% endunless %}</li>
           {% endfor %}

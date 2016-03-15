@@ -1,9 +1,9 @@
-	/*
-  	Flaticon icon font: Flaticon
-  	Creation date: 15/03/2016 02:03
-  	*/
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 15/03/2016 02:03
+    */
 
-@font-face {
+    @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
@@ -21,14 +21,22 @@
   }
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-  font-family: Flaticon;
-        font-size: 20px;
-font-style: normal;
-}
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
 
-.flaticon-arrows:before { content: "\f100"; }
+    .flaticon-arrows:before { content: "\f100"; }
 .flaticon-commerce:before { content: "\f101"; }
 .flaticon-cross:before { content: "\f102"; }
 .flaticon-education:before { content: "\f103"; }
@@ -44,3 +52,20 @@ font-style: normal;
 .flaticon-social-4:before { content: "\f10d"; }
 .flaticon-symbols:before { content: "\f10e"; }
 .flaticon-web:before { content: "\f10f"; }
+    
+    $font-Flaticon-arrows: "\f100";
+    $font-Flaticon-commerce: "\f101";
+    $font-Flaticon-cross: "\f102";
+    $font-Flaticon-education: "\f103";
+    $font-Flaticon-github: "\f104";
+    $font-Flaticon-internet: "\f105";
+    $font-Flaticon-multimedia: "\f106";
+    $font-Flaticon-play: "\f107";
+    $font-Flaticon-search: "\f108";
+    $font-Flaticon-social: "\f109";
+    $font-Flaticon-social-1: "\f10a";
+    $font-Flaticon-social-2: "\f10b";
+    $font-Flaticon-social-3: "\f10c";
+    $font-Flaticon-social-4: "\f10d";
+    $font-Flaticon-symbols: "\f10e";
+    $font-Flaticon-web: "\f10f";
