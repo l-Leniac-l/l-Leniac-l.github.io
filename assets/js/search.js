@@ -55,7 +55,8 @@ var searchEngine = {
     return result;
   },
 
-  perform: function(query,tag=false){
+  perform: function(query,tag){
+    tag = tag || false;
     searchEngine.populate();
     var results = null;
     var msg_success = null;
