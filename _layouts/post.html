@@ -24,6 +24,46 @@ layout: default
         </figure>
       {% endif %}
     </header>
-    {{ content }}
+    <section class="content">
+      {{ content }}
+      <footer class="footer">
+        <div class="endline">...</div>
+        <div class="social">
+          <div class="fb-follow"
+            data-href="https://www.facebook.com/lnlwd"
+            data-layout="button"
+            data-show-faces="false">
+          </div>
+          <div class="fb-share-button"
+  		      data-href="{{ page.url | prepend: site.url }}"
+  		      data-layout="button_count"
+            data-show-faces="false">
+  	      </div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="thelenilson">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <a href="https://twitter.com/thelenilson" class="twitter-follow-button" data-show-count="true">Follow @thelenilson</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div id="disqus_thread" class="disqus"></div>
+        <script>
+
+            var disqus_config = function () {
+                this.page.url = '{{ page.url | prepend: site.url }}';
+                this.page.identifier = '{{ page.permalink | prepend: site.url }}';
+            };
+
+            (function() {
+                var d = document, s = d.createElement('script');
+
+                s.src = '//lnlwd.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.</a></noscript>
+
+      </footer>
+    </section>
   </article>
 </section>

@@ -31,7 +31,7 @@ A line with simple `syntax highlight`.
 
 Following a syntax highlight block:
 
-{% highlight js %}
+{% highlight js linenos%}
 // Comment
 var name;
 const name2;
