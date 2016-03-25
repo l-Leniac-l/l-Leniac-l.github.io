@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     nano = require('gulp-cssnano'),
     sourcemaps = require('gulp-sourcemaps'),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+    uglify = require('gulp-uglify');
 
 var poststylus = require('poststylus'),
     postcss = require('gulp-postcss'),
@@ -54,8 +55,19 @@ gulp.task('jekyll', () => {
   jekyll.stderr.on('data', jekyllLogger);
 });
 
+
+gulp.task('uglify', function() {
+  gulp.src(['assets/js/search.js','assets/js/scripts.js'])
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(rename({suffix:'.min'}))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('assets/js'))
+});
+
 gulp.task('stylus-watch', ['stylus'], browserSync.reload);
 gulp.task('minify-watch', ['minifyCss'], browserSync.reload);
+gulp.task('uglify-watch', ['uglify'], browserSync.reload);
 
 gulp.task('serve', ['stylus','minifyCss'], () => {
   browserSync.init({
@@ -69,6 +81,7 @@ gulp.task('serve', ['stylus','minifyCss'], () => {
 
   gulp.watch(cssFiles, ['stylus-watch']);
   gulp.watch('assets/css/style.css', ['minify-watch']);
+  gulp.watch(['assets/js/search.js','assets/js/scripts.js'], ['uglify-watch']);
 });
 
 gulp.task('cssstats', function() {
@@ -85,4 +98,5 @@ gulp.task('cssstats', function() {
         );
 });
 
-gulp.task('default', ['stylus','minifyCss','jekyll', 'serve']);
+
+gulp.task('default', ['stylus', 'minifyCss', 'uglify', 'jekyll', 'serve']);

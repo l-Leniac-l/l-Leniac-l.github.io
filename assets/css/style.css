@@ -401,9 +401,10 @@ pre {
   font-weight: lighter;
 }
 .glyph-icon.-menu {
-  display: inline-block;
-  margin: 4%;
-  padding: 2%;
+  display: table-cell;
+  width: 90%;
+  height: 90%;
+  vertical-align: middle;
   color: #fff;
   font-size: calc(8px + 2 * ((100vw - 420px) / 860));
   text-align: center;
@@ -498,10 +499,6 @@ body {
   background-color: #03638f;
   width: 20%;
   height: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-family: "Open Sans";
   text-align: center;
 }
@@ -556,7 +553,19 @@ body {
           order: 2;
 }
 .main-menu > .nav > .link {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 2em;
   margin-top: 0.1em;
@@ -591,6 +600,26 @@ body {
   height: 1px;
   background-color: #fff;
   border: none;
+}
+.main-menu > .footer > .social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+}
+.main-menu > .footer > .social > a {
+  display: table;
+  width: 40px;
+  height: 40px;
+  padding: 2%;
 }
 .main-content {
   display: -webkit-box;

@@ -5,7 +5,6 @@
   bg base-color-1
   wi 20%
   he 100%
-  flex 1
   font-family "Open Sans"
   ta center
 
@@ -34,7 +33,9 @@
     order 2
 
     > .link
-      ds block
+      ds flex
+      flex-direction row
+      justify-content center
       wi 100%
       he 2em
       margin-top 0.1em
@@ -55,3 +56,14 @@
       he 1px
       bg text-color-1
       bo none
+
+    > .social
+      ds flex
+      flex-flow row wrap
+      justify-content space-between
+      pa 0 10%
+      > a
+        ds table
+        wi 40px
+        he 40px
+        pa 2%
