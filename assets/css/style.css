@@ -637,10 +637,6 @@ body {
   bottom: 0;
   left: 20%;
   width: 80%;
-  -webkit-box-flex: 2;
-  -webkit-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
 }
 .search-area {
   position: fixed;
@@ -986,6 +982,71 @@ body {
   width: 70%;
   height: 300px;
   margin: 0 auto;
+}
+.about-me {
+  color: #aeaeae;
+}
+.about-me > .header {
+  padding: 1% 0;
+  width: 50%;
+  margin: 0 auto;
+}
+.about-me > .header > h1 {
+  text-align: center;
+}
+.about-me > .header > p {
+  text-align: justify;
+}
+.about-me > .content {
+  padding: 1% 0;
+  text-align: center;
+}
+.about-me > .content > h1 {
+  font-size: calc(12px + 12 * ((100vw - 420px) / 860));
+  margin: 0.4% 0;
+}
+@media screen and (min-width: 1280px) {
+  .about-me > .content > h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about-me > .content > h1 {
+    font-size: 12px;
+  }
+}
+.about-me > .content > .uxd > h2,
+.about-me > .content .front > h2 {
+  font-size: calc(10px + 8 * ((100vw - 420px) / 860));
+  margin: 0.25% 0;
+}
+@media screen and (min-width: 1280px) {
+  .about-me > .content > .uxd > h2,
+.about-me > .content .front > h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about-me > .content > .uxd > h2,
+.about-me > .content .front > h2 {
+    font-size: 10px;
+  }
+}
+.about-me > .content > .uxd > p,
+.about-me > .content .front > p {
+  font-size: calc(10px + 4 * ((100vw - 420px) / 860));
+}
+@media screen and (min-width: 1280px) {
+  .about-me > .content > .uxd > p,
+.about-me > .content .front > p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about-me > .content > .uxd > p,
+.about-me > .content .front > p {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
