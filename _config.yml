@@ -25,6 +25,9 @@ gems:
 sass:
     style: compressed
 
+collections:
+  - projects
+
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
