@@ -1,0 +1,20 @@
+.talk-list
+  list-style none
+  ds flex
+  flex-direction column
+  pa 1% 0
+
+  > .talk
+    ma 0.5% 2%
+    border-bottom 1px solid base-color-2
+
+    &:last-child
+      border-bottom none
+
+    > .title
+      cl base-color-1
+      fs responsive 12px 24px
+
+      > .icon
+        td none
+        cl darken(text-color-2,50%)

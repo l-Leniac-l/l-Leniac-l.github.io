@@ -27,6 +27,7 @@ sass:
 
 collections:
   - projects
+  - talks
 
 compress_html:
   clippings: all

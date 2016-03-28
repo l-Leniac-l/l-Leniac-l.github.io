@@ -2,10 +2,24 @@
 layout: default
 ---
 <section class="main-content">
+  <h1 class="page-title">Projects</h1>
   <ul class="project-list">
-    <li class="project">
-      <h1>Project title</h1>
-      <p>Project description</p>
-    </li>
+    {% for project in site.projects %}
+      <li class="project">
+        <h1 class="title">
+          {% if project.link %}
+            <a href="{{ project.link }}" class="link" target="_blank">{{ project.title }}</a>
+          {% else %}
+            {{ project.title }}
+          {% endif %}
+          {% if project.github_link %}
+            <a href="{{ project.github_link }}" class="git" target="_blank">
+              <i class="glyphicon flaticon-github"></i>
+            </a>
+          {% endif %}
+        </h1>
+        <p class="description">{{ project.content }}</p>
+      </li>
+    {% endfor %}
   </ul>
 </section>

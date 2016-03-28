@@ -138,6 +138,21 @@ h1 {
     font-size: 14px;
   }
 }
+.page-title {
+  text-align: center;
+  font-size: calc(14px + 18 * ((100vw - 420px) / 860));
+  color: #03638f;
+}
+@media screen and (min-width: 1280px) {
+  .page-title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .page-title {
+    font-size: 14px;
+  }
+}
 h2 {
   font-size: calc(12px + 16 * ((100vw - 420px) / 860));
   margin: 0.3% 0;
@@ -402,23 +417,21 @@ pre {
 }
 .glyph-icon.-menu {
   display: table-cell;
-  width: 90%;
-  height: 90%;
   vertical-align: middle;
   color: #fff;
-  font-size: calc(8px + 2 * ((100vw - 420px) / 860));
+  font-size: calc(6px + 2 * ((100vw - 420px) / 860));
   text-align: center;
   border: 2px solid #fff;
   border-radius: 50%;
 }
 @media screen and (min-width: 1280px) {
   .glyph-icon.-menu {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 420px) {
   .glyph-icon.-menu {
-    font-size: 8px;
+    font-size: 6px;
   }
 }
 .glyph-icon.-search {
@@ -474,6 +487,21 @@ pre {
     font-size: 10px;
   }
 }
+.glyph-icon.-talk {
+  display: inline-block;
+  font-size: calc(10px + 4 * ((100vw - 420px) / 860));
+  margin: 0 0.5%;
+}
+@media screen and (min-width: 1280px) {
+  .glyph-icon.-talk {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .glyph-icon.-talk {
+    font-size: 10px;
+  }
+}
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -505,18 +533,21 @@ body {
 .main-menu > .header {
   color: #fff;
   width: 100%;
-  height: 50%;
+  height: 40%;
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
 }
 .main-menu > .header > .cover {
-  width: 75%;
+  width: 65%;
   height: 70%;
   border-radius: 50%;
   overflow: hidden;
-  margin: 5% 12%;
+  margin: 5% auto;
+}
+.main-menu > .header > .cover > .image {
+  margin: 0 auto;
 }
 .main-menu > .header > .name {
   font-weight: normal;
@@ -617,8 +648,8 @@ body {
 }
 .main-menu > .footer > .social > a {
   display: table;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   padding: 2%;
 }
 .main-content {
@@ -1047,6 +1078,88 @@ body {
 .about-me > .content .front > p {
     font-size: 10px;
   }
+}
+.project-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1% 0;
+}
+.project-list > .project {
+  margin: 0.5% 2%;
+  border-bottom: 1px solid #415c71;
+}
+.project-list > .project:last-child {
+  border-bottom: none;
+}
+.project-list > .project > .title {
+  color: #03638f;
+  font-size: calc(12px + 12 * ((100vw - 420px) / 860));
+}
+@media screen and (min-width: 1280px) {
+  .project-list > .project > .title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .project-list > .project > .title {
+    font-size: 12px;
+  }
+}
+.project-list > .project > .title > a {
+  text-decoration: none;
+}
+.project-list > .project > .title > .git {
+  color: #7c7c7c;
+  margin: 0 0.5%;
+}
+.project-list > .project > .title > .link:hover {
+  text-decoration: underline;
+}
+.talk-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1% 0;
+}
+.talk-list > .talk {
+  margin: 0.5% 2%;
+  border-bottom: 1px solid #415c71;
+}
+.talk-list > .talk:last-child {
+  border-bottom: none;
+}
+.talk-list > .talk > .title {
+  color: #03638f;
+  font-size: calc(12px + 12 * ((100vw - 420px) / 860));
+}
+@media screen and (min-width: 1280px) {
+  .talk-list > .talk > .title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .talk-list > .talk > .title {
+    font-size: 12px;
+  }
+}
+.talk-list > .talk > .title > .icon {
+  text-decoration: none;
+  color: #7c7c7c;
 }
 
 /*# sourceMappingURL=style.css.map */

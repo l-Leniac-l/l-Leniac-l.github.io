@@ -31,11 +31,11 @@ font-style: normal;
 .flaticon-arrows:before { content: "\f100"; }
 .flaticon-commerce:before { content: "\f101"; }
 .flaticon-cross:before { content: "\f102"; }
-.flaticon-education:before { content: "\f103"; }
+.flaticon-slides:before { content: "\f103"; }
 .flaticon-github:before { content: "\f104"; }
 .flaticon-internet:before { content: "\f105"; }
-.flaticon-multimedia:before { content: "\f106"; }
-.flaticon-play:before { content: "\f107"; }
+.flaticon-audio:before { content: "\f106"; }
+.flaticon-video:before { content: "\f107"; }
 .flaticon-search:before { content: "\f108"; }
 .flaticon-social:before { content: "\f109"; }
 .flaticon-social-1:before { content: "\f10a"; }

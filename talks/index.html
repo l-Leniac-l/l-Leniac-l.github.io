@@ -1,3 +1,21 @@
 ---
 layout: default
 ---
+<section class="main-content">
+  <h1 class="page-title">Talks</h1>
+  <ul class="talk-list">
+    {% for talk in site.talks %}
+      <li class="talk">
+        <h1 class="title">
+          {{ talk.title }}
+          {% for link in talk.links %}
+            <a href="{{ link.target }}" class="icon" target="_blank">
+              <i class="glyph-icon flaticon-{{ link.type }} -talk"></i>
+            </a>
+          {% endfor %}
+        </h1>
+        <p class="description">{{ talk.content }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
