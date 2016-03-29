@@ -4,7 +4,7 @@ email: me@lnlwd.com
 description: > # this means to ignore newlines until "baseurl:"
   An UX Designer and Front end Developer living in Brazil.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://lnlwd.com" # the base hostname & protocol for your site
+url: "https://lnlwd.com" # the base hostname & protocol for your site
 twitter:
   username: thelenilson
 github_username:  lnlwd
@@ -21,9 +21,6 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-
-sass:
-    style: compressed
 
 collections:
   - projects
