@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: 'Open Sans';
 }
@@ -128,13 +129,13 @@ h1 {
   font-size: calc(14px + 18 * ((100vw - 420px) / 860));
   margin: 0.2% 0;
 }
-@media screen and (min-width: 1280px) {
-  h1 {
+@media screen and (min-width: 1280px){
+  h1{
     font-size: 32px;
   }
 }
-@media screen and (max-width: 420px) {
-  h1 {
+@media screen and (max-width: 420px){
+  h1{
     font-size: 14px;
   }
 }
@@ -143,13 +144,13 @@ h1 {
   font-size: calc(14px + 18 * ((100vw - 420px) / 860));
   color: #03638f;
 }
-@media screen and (min-width: 1280px) {
-  .page-title {
+@media screen and (min-width: 1280px){
+  .page-title{
     font-size: 32px;
   }
 }
-@media screen and (max-width: 420px) {
-  .page-title {
+@media screen and (max-width: 420px){
+  .page-title{
     font-size: 14px;
   }
 }
@@ -157,13 +158,13 @@ h2 {
   font-size: calc(12px + 16 * ((100vw - 420px) / 860));
   margin: 0.3% 0;
 }
-@media screen and (min-width: 1280px) {
-  h2 {
+@media screen and (min-width: 1280px){
+  h2{
     font-size: 28px;
   }
 }
-@media screen and (max-width: 420px) {
-  h2 {
+@media screen and (max-width: 420px){
+  h2{
     font-size: 12px;
   }
 }
@@ -171,13 +172,13 @@ h3 {
   font-size: calc(12px + 12 * ((100vw - 420px) / 860));
   margin: 0.3% 0;
 }
-@media screen and (min-width: 1280px) {
-  h3 {
+@media screen and (min-width: 1280px){
+  h3{
     font-size: 24px;
   }
 }
-@media screen and (max-width: 420px) {
-  h3 {
+@media screen and (max-width: 420px){
+  h3{
     font-size: 12px;
   }
 }
@@ -185,13 +186,13 @@ h4 {
   font-size: calc(12px + 10 * ((100vw - 420px) / 860));
   margin: 0.3% 0;
 }
-@media screen and (min-width: 1280px) {
-  h4 {
+@media screen and (min-width: 1280px){
+  h4{
     font-size: 22px;
   }
 }
-@media screen and (max-width: 420px) {
-  h4 {
+@media screen and (max-width: 420px){
+  h4{
     font-size: 12px;
   }
 }
@@ -199,13 +200,13 @@ h5 {
   font-size: calc(10px + 8 * ((100vw - 420px) / 860));
   margin: 0.3% 0;
 }
-@media screen and (min-width: 1280px) {
-  h5 {
+@media screen and (min-width: 1280px){
+  h5{
     font-size: 18px;
   }
 }
-@media screen and (max-width: 420px) {
-  h5 {
+@media screen and (max-width: 420px){
+  h5{
     font-size: 10px;
   }
 }
@@ -213,13 +214,13 @@ h6 {
   font-size: calc(10px + 6 * ((100vw - 420px) / 860));
   margin: 0.4% 0;
 }
-@media screen and (min-width: 1280px) {
-  h6 {
+@media screen and (min-width: 1280px){
+  h6{
     font-size: 16px;
   }
 }
-@media screen and (max-width: 420px) {
-  h6 {
+@media screen and (max-width: 420px){
+  h6{
     font-size: 10px;
   }
 }
@@ -228,13 +229,13 @@ p {
   margin: 0.5% 0;
   line-height: 24px;
 }
-@media screen and (min-width: 1280px) {
-  p {
+@media screen and (min-width: 1280px){
+  p{
     font-size: 16px;
   }
 }
-@media screen and (max-width: 420px) {
-  p {
+@media screen and (max-width: 420px){
+  p{
     font-size: 10px;
   }
 }
@@ -251,13 +252,13 @@ blockquote {
   color: #7c7c7c;
   margin: 0.5% 0;
 }
-@media screen and (min-width: 1280px) {
-  blockquote {
+@media screen and (min-width: 1280px){
+  blockquote{
     font-size: 18px;
   }
 }
-@media screen and (max-width: 420px) {
-  blockquote {
+@media screen and (max-width: 420px){
+  blockquote{
     font-size: 12px;
   }
 }
@@ -274,13 +275,13 @@ ul {
   font-size: calc(10px + 6 * ((100vw - 420px) / 860));
   color: #7c7c7c;
 }
-@media screen and (min-width: 1280px) {
-  ul {
+@media screen and (min-width: 1280px){
+  ul{
     font-size: 16px;
   }
 }
-@media screen and (max-width: 420px) {
-  ul {
+@media screen and (max-width: 420px){
+  ul{
     font-size: 10px;
   }
 }
@@ -300,13 +301,13 @@ ol {
   font-size: calc(10px + 6 * ((100vw - 420px) / 860));
   color: #7c7c7c;
 }
-@media screen and (min-width: 1280px) {
-  ol {
+@media screen and (min-width: 1280px){
+  ol{
     font-size: 16px;
   }
 }
-@media screen and (max-width: 420px) {
-  ol {
+@media screen and (max-width: 420px){
+  ol{
     font-size: 10px;
   }
 }
@@ -424,13 +425,13 @@ pre {
   border: 2px solid #fff;
   border-radius: 50%;
 }
-@media screen and (min-width: 1280px) {
-  .glyph-icon.-menu {
+@media screen and (min-width: 1280px){
+  .glyph-icon.-menu{
     font-size: 8px;
   }
 }
-@media screen and (max-width: 420px) {
-  .glyph-icon.-menu {
+@media screen and (max-width: 420px){
+  .glyph-icon.-menu{
     font-size: 6px;
   }
 }
@@ -439,13 +440,13 @@ pre {
   font-size: calc(10px + 4 * ((100vw - 420px) / 860));
   text-decoration: none;
 }
-@media screen and (min-width: 1280px) {
-  .glyph-icon.-search {
+@media screen and (min-width: 1280px){
+  .glyph-icon.-search{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 420px) {
-  .glyph-icon.-search {
+@media screen and (max-width: 420px){
+  .glyph-icon.-search{
     font-size: 10px;
   }
 }
@@ -453,13 +454,13 @@ pre {
   color: #03638f;
   font-size: calc(8px + 2 * ((100vw - 420px) / 860));
 }
-@media screen and (min-width: 1280px) {
-  .glyph-icon.-tag {
+@media screen and (min-width: 1280px){
+  .glyph-icon.-tag{
     font-size: 10px;
   }
 }
-@media screen and (max-width: 420px) {
-  .glyph-icon.-tag {
+@media screen and (max-width: 420px){
+  .glyph-icon.-tag{
     font-size: 8px;
   }
 }
@@ -477,13 +478,13 @@ pre {
   background-color: #b5c7d5;
   border: 1px solid #8ba7bc;
 }
-@media screen and (min-width: 1280px) {
-  .glyph-icon.-input {
+@media screen and (min-width: 1280px){
+  .glyph-icon.-input{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 420px) {
-  .glyph-icon.-input {
+@media screen and (max-width: 420px){
+  .glyph-icon.-input{
     font-size: 10px;
   }
 }
@@ -492,13 +493,13 @@ pre {
   font-size: calc(10px + 4 * ((100vw - 420px) / 860));
   margin: 0 0.5%;
 }
-@media screen and (min-width: 1280px) {
-  .glyph-icon.-talk {
+@media screen and (min-width: 1280px){
+  .glyph-icon.-talk{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 420px) {
-  .glyph-icon.-talk {
+@media screen and (max-width: 420px){
+  .glyph-icon.-talk{
     font-size: 10px;
   }
 }
@@ -553,13 +554,13 @@ body {
   font-weight: normal;
   font-size: calc(12px + 6 * ((100vw - 420px) / 860));
 }
-@media screen and (min-width: 1280px) {
-  .main-menu > .header > .name {
+@media screen and (min-width: 1280px){
+  .main-menu > .header > .name{
     font-size: 18px;
   }
 }
-@media screen and (max-width: 420px) {
-  .main-menu > .header > .name {
+@media screen and (max-width: 420px){
+  .main-menu > .header > .name{
     font-size: 12px;
   }
 }
@@ -567,13 +568,13 @@ body {
   font-weight: lighter;
   font-size: calc(8px + 6 * ((100vw - 420px) / 860));
 }
-@media screen and (min-width: 1280px) {
-  .main-menu > .header > .position {
+@media screen and (min-width: 1280px){
+  .main-menu > .header > .position{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 420px) {
-  .main-menu > .header > .position {
+@media screen and (max-width: 420px){
+  .main-menu > .header > .position{
     font-size: 8px;
   }
 }
@@ -605,13 +606,13 @@ body {
   color: #fff;
   text-decoration: none;
 }
-@media screen and (min-width: 1280px) {
-  .main-menu > .nav > .link {
+@media screen and (min-width: 1280px){
+  .main-menu > .nav > .link{
     font-size: 16px;
   }
 }
-@media screen and (max-width: 420px) {
-  .main-menu > .nav > .link {
+@media screen and (max-width: 420px){
+  .main-menu > .nav > .link{
     font-size: 10px;
   }
 }
@@ -714,13 +715,13 @@ body {
   padding: 0 0.5em;
   color: #03638f;
 }
-@media screen and (min-width: 1280px) {
-  .search-area > .search > .form > .input {
+@media screen and (min-width: 1280px){
+  .search-area > .search > .form > .input{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 420px) {
-  .search-area > .search > .form > .input {
+@media screen and (max-width: 420px){
+  .search-area > .search > .form > .input{
     font-size: 10px;
   }
 }
@@ -787,13 +788,13 @@ body {
   margin: 0.7% 0;
   color: #c6c6c6;
 }
-@media screen and (min-width: 1280px) {
-  .post-list > .search_msg {
+@media screen and (min-width: 1280px){
+  .post-list > .search_msg{
     font-size: 24px;
   }
 }
-@media screen and (max-width: 420px) {
-  .post-list > .search_msg {
+@media screen and (max-width: 420px){
+  .post-list > .search_msg{
     font-size: 12px;
   }
 }
@@ -819,13 +820,13 @@ body {
   font-weight: lighter;
   margin: 0.5% 0;
 }
-@media screen and (min-width: 1280px) {
-  .post-list > .post > .title {
+@media screen and (min-width: 1280px){
+  .post-list > .post > .title{
     font-size: 24px;
   }
 }
-@media screen and (max-width: 420px) {
-  .post-list > .post > .title {
+@media screen and (max-width: 420px){
+  .post-list > .post > .title{
     font-size: 12px;
   }
 }
@@ -845,13 +846,13 @@ body {
   font-weight: normal;
   color: #7c7c7c;
 }
-@media screen and (min-width: 1280px) {
-  .post-list > .post > .date {
+@media screen and (min-width: 1280px){
+  .post-list > .post > .date{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 420px) {
-  .post-list > .post > .date {
+@media screen and (max-width: 420px){
+  .post-list > .post > .date{
     font-size: 8px;
   }
 }
@@ -865,13 +866,13 @@ body {
   font-weight: normal;
   text-align: justify;
 }
-@media screen and (min-width: 1280px) {
-  .post-list > .post > .description {
+@media screen and (min-width: 1280px){
+  .post-list > .post > .description{
     font-size: 16px;
   }
 }
-@media screen and (max-width: 420px) {
-  .post-list > .post > .description {
+@media screen and (max-width: 420px){
+  .post-list > .post > .description{
     font-size: 10px;
   }
 }
@@ -921,13 +922,13 @@ body {
   font-weight: lighter;
   margin: 0.5% 0;
 }
-@media screen and (min-width: 1280px) {
-  .post-content > .header > .title {
+@media screen and (min-width: 1280px){
+  .post-content > .header > .title{
     font-size: 28px;
   }
 }
-@media screen and (max-width: 420px) {
-  .post-content > .header > .title {
+@media screen and (max-width: 420px){
+  .post-content > .header > .title{
     font-size: 12px;
   }
 }
@@ -938,13 +939,13 @@ body {
   font-weight: normal;
   color: #7c7c7c;
 }
-@media screen and (min-width: 1280px) {
-  .post-content > .header > .meta {
+@media screen and (min-width: 1280px){
+  .post-content > .header > .meta{
     font-size: 12px;
   }
 }
-@media screen and (max-width: 420px) {
-  .post-content > .header > .meta {
+@media screen and (max-width: 420px){
+  .post-content > .header > .meta{
     font-size: 8px;
   }
 }
@@ -956,13 +957,13 @@ body {
   margin-bottom: 0.5%;
   font-size: calc(8px + 4 * ((100vw - 420px) / 860));
 }
-@media screen and (min-width: 1280px) {
-  .post-content > .header > .tagList {
+@media screen and (min-width: 1280px){
+  .post-content > .header > .tagList{
     font-size: 12px;
   }
 }
-@media screen and (max-width: 420px) {
-  .post-content > .header > .tagList {
+@media screen and (max-width: 420px){
+  .post-content > .header > .tagList{
     font-size: 8px;
   }
 }
@@ -994,13 +995,13 @@ body {
   font-size: calc(22px + 22 * ((100vw - 420px) / 860));
   margin: 1% auto;
 }
-@media screen and (min-width: 1280px) {
-  .post-content > .content > .footer .endline {
+@media screen and (min-width: 1280px){
+  .post-content > .content > .footer .endline{
     font-size: 44px;
   }
 }
-@media screen and (max-width: 420px) {
-  .post-content > .content > .footer .endline {
+@media screen and (max-width: 420px){
+  .post-content > .content > .footer .endline{
     font-size: 22px;
   }
 }
@@ -1036,13 +1037,13 @@ body {
   font-size: calc(12px + 12 * ((100vw - 420px) / 860));
   margin: 0.4% 0;
 }
-@media screen and (min-width: 1280px) {
-  .about-me > .content > h1 {
+@media screen and (min-width: 1280px){
+  .about-me > .content > h1{
     font-size: 24px;
   }
 }
-@media screen and (max-width: 420px) {
-  .about-me > .content > h1 {
+@media screen and (max-width: 420px){
+  .about-me > .content > h1{
     font-size: 12px;
   }
 }
@@ -1051,15 +1052,15 @@ body {
   font-size: calc(10px + 8 * ((100vw - 420px) / 860));
   margin: 0.25% 0;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px){
   .about-me > .content > .uxd > h2,
-.about-me > .content .front > h2 {
+.about-me > .content .front > h2{
     font-size: 18px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 420px){
   .about-me > .content > .uxd > h2,
-.about-me > .content .front > h2 {
+.about-me > .content .front > h2{
     font-size: 10px;
   }
 }
@@ -1067,15 +1068,15 @@ body {
 .about-me > .content .front > p {
   font-size: calc(10px + 4 * ((100vw - 420px) / 860));
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px){
   .about-me > .content > .uxd > p,
-.about-me > .content .front > p {
+.about-me > .content .front > p{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 420px){
   .about-me > .content > .uxd > p,
-.about-me > .content .front > p {
+.about-me > .content .front > p{
     font-size: 10px;
   }
 }
@@ -1103,13 +1104,13 @@ body {
   color: #03638f;
   font-size: calc(12px + 12 * ((100vw - 420px) / 860));
 }
-@media screen and (min-width: 1280px) {
-  .project-list > .project > .title {
+@media screen and (min-width: 1280px){
+  .project-list > .project > .title{
     font-size: 24px;
   }
 }
-@media screen and (max-width: 420px) {
-  .project-list > .project > .title {
+@media screen and (max-width: 420px){
+  .project-list > .project > .title{
     font-size: 12px;
   }
 }
@@ -1147,13 +1148,13 @@ body {
   color: #03638f;
   font-size: calc(12px + 12 * ((100vw - 420px) / 860));
 }
-@media screen and (min-width: 1280px) {
-  .talk-list > .talk > .title {
+@media screen and (min-width: 1280px){
+  .talk-list > .talk > .title{
     font-size: 24px;
   }
 }
-@media screen and (max-width: 420px) {
-  .talk-list > .talk > .title {
+@media screen and (max-width: 420px){
+  .talk-list > .talk > .title{
     font-size: 12px;
   }
 }
