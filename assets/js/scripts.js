@@ -23,7 +23,7 @@ var generalScripts = {
         $($target).css('visibility','visible')
         $($target).css('opacity','1')
       }
-      $(this).parents().children('.modal').children('.close').on('click',function(){
+      $target.children('.close').on('click',function(){
         if($($target).css('visibility') == 'visible') {
           $($target).css('visibility','hidden')
           $($target).css('opacity','0')
