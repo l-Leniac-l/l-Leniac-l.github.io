@@ -1,0 +1,72 @@
+.portfolio-list
+  list-style none
+  ds flex
+  flex-flow row wrap
+  justify-content space-around
+  pa 1% 0
+
+  > .item
+    po relative
+    wi 30%
+    he 175px
+    bg rgba(0, 0, 0, 0.25);
+
+    > .image
+      max-width 100%
+      max-height 100%
+
+      > img
+        wi 100%
+        he 100%
+
+      > figcaption
+        po absolute
+        bottom 0
+        wi 100%
+        he 45px
+        ta center
+        bg rgba(0, 0, 0, 0.5);
+
+        > h1
+          po absolute
+          left 0
+          wi 80%
+          lh 45px
+          fs responsive 8px 18px
+          cl #ffffff
+          fw lighter
+
+        > .link
+          po absolute
+          right 0
+          wi 45px
+          he 100%
+          bg base-color-1
+          lh 45px
+          cl #ffffff
+          td none
+          zi 1
+
+    > .modal
+      po absolute
+      zi 2
+      top 0
+      left 0
+      wi 100%
+      he 100%
+      visibility hidden
+      opacity 0
+      transition all ease 0.5s
+      bg rgba(0,0,0,0.80)
+      ta center
+      cl #ffffff
+
+      > .close
+        po absolute
+        right 0
+        bottom 0
+        wi 45px
+        he 45px
+        cl #ffffff
+        td none
+        transform rotate(45deg)

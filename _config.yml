@@ -25,6 +25,7 @@ gems:
 collections:
   - projects
   - talks
+  - portfolio
 
 compress_html:
   clippings: all
