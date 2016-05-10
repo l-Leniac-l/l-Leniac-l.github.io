@@ -19,14 +19,14 @@ const cssFiles = '_css/**/*.styl';
 
 gulp.task('stylus', () => {
   gulp.src('_css/style.styl')
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(stylus({
       'include css': true,
       use: [
         poststylus([rucksack({autoprefixer: true})])
       ]
     }))
-    .pipe(sourcemaps.write('.'))
+    //.pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('assets/css'))
 });
 

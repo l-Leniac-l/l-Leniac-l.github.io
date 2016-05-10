@@ -1,0 +1,32 @@
+.post-pagination
+  po absolute
+  right 0
+  bottom 0
+  wi 96%
+  he 50px
+  ta center
+
+  > .pages
+    ds block
+    va top
+    ma 0 auto
+    list-style none
+
+    > .next
+      transform rotate(180deg)
+
+    > .previous, .page, .next
+      ds inline-block
+      va middle
+      max-width 50px
+      max-height 50px
+      bor 3px
+      pa 12px 22px
+      bg darken(text-color-2,10%)
+      fs responsive 12px 16px
+
+      > a
+        ds block
+        td none
+        wi 100%
+        he 100%

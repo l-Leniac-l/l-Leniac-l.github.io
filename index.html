@@ -4,7 +4,7 @@ layout: default
 <section class="main-content">
   {% include search.html %}
   <section class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <article class="post">
         <h1 class="title"><a href="{{ post.url | prepend: site.baseurl }}" class="link">{{ post.title }}</a></h1>
         <small class="date">{{ post.date | date: "%b %-d, %Y" }}</small>
@@ -23,5 +23,29 @@ layout: default
         </ul>
       </article>
     {% endfor %}
+    <section class="post-pagination">
+      <ul class="pages">
+      {% if paginator.previous_page %}
+        <li class="previous"><a href="{{paginator.previous_page_path}}"><i class="glyph-icon flaticon-arrows -pagination"></i></a></li>
+      {% else %}
+        <li class="previous"><i class="glyph-icon flaticon-arrows -pagination"></i></li>
+      {% endif %}
+      {% capture start %}{{ paginator.page | minus: 3 }}{% endcapture %}
+      {% for count in (1..paginator.total_pages) limit: 5 offset: start %}
+        {% if count == paginator.page %}
+          <li class="page">{{count}}</li>
+        {% elsif count == 1 %}
+          <li class="page"><a href="/">{{count}}</a></li>
+        {% else %}
+          <li class="page"><a href="{{count | prepend: "/page"}}">{{count}}</a></li>
+        {% endif %}
+      {% endfor %}
+      {% if paginator.next_page %}
+        <li class="next"><a href="{{paginator.next_page_path}}"><i class="glyph-icon flaticon-arrows -pagination"></i></a></li>
+      {% else %}
+        <li class="next"><i class="glyph-icon flaticon-arrows -pagination"></i></li>
+      {% endif %}
+      </ul>
+    </section>
   </section>
 </section>

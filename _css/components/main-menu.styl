@@ -1,12 +1,27 @@
+.menu-label
+  po absolute
+  zi 3
+  ds none
+  +breakpoint(320px,'portrait')
+    ds block
+
+.menu-toggle
+  ds none
+  &:checked + .main-menu
+    ds flex
+
 .main-menu
   ds flex
   flex-direction column
   po fixed
+  zi 2
   bg base-color-1
   wi 20%
   he 100%
   font-family "Open Sans"
   ta center
+  +breakpoint(320px,'portrait')
+    ds none
 
   > .header
     cl text-color-1
