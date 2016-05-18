@@ -1,5 +1,5 @@
 .menu-label
-  po absolute
+  po fixed
   zi 3
   ds none
   +breakpoint(320px,'portrait')
@@ -9,6 +9,17 @@
   ds none
   &:checked + .main-menu
     ds flex
+
+.mobile-bar
+  ds none
+  +breakpoint(320px,'portrait')
+    ds flex
+    po fixed
+    top 0
+    left 0
+    wi 100%
+    he 40px
+    bg base-color-1
 
 .main-menu
   ds flex
@@ -21,6 +32,7 @@
   font-family "Open Sans"
   ta center
   +breakpoint(320px,'portrait')
+    wi 100%
     ds none
 
   > .header
@@ -28,6 +40,8 @@
     wi 100%
     he 40%
     order 1
+    +breakpoint(320px,'portrait')
+      he 55%
 
     > .cover
       wi 65%
@@ -41,11 +55,11 @@
 
     > .name
       fw normal
-      fs responsive 12px 18px
+      fs responsive 14px 18px
 
     > .position
       fw lighter
-      fs responsive 8px 14px
+      fs responsive 9px 14px
 
   > .nav
     order 2
@@ -58,7 +72,7 @@
       he 2em
       margin-top 0.1em
       lh 2em
-      fs responsive 10px 16px
+      fs responsive 12px 16px
       cl text-color-1
       td none
       &:hover,
@@ -80,9 +94,11 @@
       flex-flow row wrap
       justify-content space-between
       pa 0 10%
+      +breakpoint(320px,'portrait')
+        pa 0 15%
 
       > a
         ds table
         wi 35px
         he 35px
-        pa 2%
+        pa 3%

@@ -10,15 +10,9 @@ layout: default
         <img src="{{item.image}}" alt="{{item.title}}" />
         <figcaption>
           <h1>{{item.title}}</h1>
-          <a href="#" class="link" title="{{item.title}}"><i class="glyph-icon flaticon-cross -portfolio"></i></a>
+          <a href="{{item.url}}" class="link" title="{{item.title}}"><i class="glyph-icon flaticon-cross -portfolio"></i></a>
         </figcaption>
       </figure>
-      <div class="modal">
-        <h1>{{item.title}}</h1>
-        <a href="{{item.link}}" class="-light" target="_blank" title="{{item.title}}">Visit website</a>
-        <a href="#" class="close"><i class="glyph-icon flaticon-cross"></i></a>
-        <p>{{item.content}}</p>
-      </div>
     </li>
     {% endfor %}
   </ul>

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="main-content">
+  <article class="portfolio-content">
+    <header class="header">
+      <h1 class="title">{{page.title}}</h1>
+      {% if page.link %}
+        <a href="{{page.link}}" class="link" title="See this job" target="_blank">See this job!</a>
+      {% endif %}
+      {% if page.image %}
+        <figure class="image">
+          <img src="{{page.image}}" alt="{{page.title}}" />
+          <figcaption>&nbsp;</figcaption>
+        </figure>
+      {% endif %}
+    </header>
+    <section class="content">
+      {{page.content}}
+    </section>
+  </article>
+</section>

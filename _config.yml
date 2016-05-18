@@ -26,9 +26,12 @@ gems:
   - jekyll-paginate
 
 collections:
-  - projects
-  - talks
-  - portfolio
+  projects:
+    output: false
+  talks:
+    output: false
+  portfolio:
+      output: true
 
 compress_html:
   clippings: all

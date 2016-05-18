@@ -33,4 +33,4 @@ var generalScripts = {
   }
 }
 generalScripts.open();
-generalScripts.modal();
+//generalScripts.modal();
