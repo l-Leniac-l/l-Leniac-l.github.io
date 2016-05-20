@@ -12,7 +12,7 @@ github_username:  lnlwd
 # Build settings
 markdown: kramdown
 
-paginate: 5
+paginate: 8
 
 exclude:
   - node_modules

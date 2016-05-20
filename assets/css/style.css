@@ -897,6 +897,7 @@ body {
   font-weight: lighter;
   margin: 0.7% 0;
   color: #c6c6c6;
+  text-align: center;
 }
 @media screen and (min-width: 1280px){
   .post-list > .search_msg{
@@ -908,11 +909,25 @@ body {
     font-size: 12px;
   }
 }
+.post-list > .post:after{
+  content: '';
+  display: block;
+  clear: both;
+}
 .post-list > .post {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 96%;
   border-bottom: 1px solid #c6c6c6;
   margin: 0 0 1% 2%;
-  padding-bottom: 4%;
 }
 .post-list > .post:last-child {
   border-bottom: none;
@@ -925,97 +940,138 @@ body {
 .post-list > .post.-search > .description {
   margin: 0.7% 0;
 }
-.post-list > .post > .title {
+.post-list > .post > .header {
+  margin: 2% 0;
+}
+.post-list > .post > .header > .title {
   font-size: calc(12px + 12 * ((100vw - 420px) / 860));
   font-weight: lighter;
   margin: 0.5% 0;
 }
 @media screen and (min-width: 1280px){
-  .post-list > .post > .title{
+  .post-list > .post > .header > .title{
     font-size: 24px;
   }
 }
 @media screen and (max-width: 420px){
-  .post-list > .post > .title{
+  .post-list > .post > .header > .title{
     font-size: 12px;
   }
 }
-.post-list > .post > .title > .term {
+.post-list > .post > .header > .title > .term {
   background-color: #ffeb3b;
 }
-.post-list > .post > .title > .link {
+.post-list > .post > .header > .title > .link {
   color: #03638f;
   text-decoration: none;
   margin: 0.5% 0;
 }
-.post-list > .post > .title > .link:hover {
+.post-list > .post > .header > .title > .link:hover {
   text-decoration: underline;
 }
-.post-list > .post > .date {
+.post-list > .post > .header > .date {
   font-size: calc(8px + 6 * ((100vw - 420px) / 860));
   font-weight: normal;
   color: #7c7c7c;
 }
 @media screen and (min-width: 1280px){
-  .post-list > .post > .date{
+  .post-list > .post > .header > .date{
     font-size: 14px;
   }
 }
 @media screen and (max-width: 420px){
-  .post-list > .post > .date{
+  .post-list > .post > .header > .date{
     font-size: 8px;
   }
 }
-.post-list > .post > .image > img {
+.post-list > .post .content {
   width: 100%;
-  max-height: 300px;
-  margin: 0.5% 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: no-wrap space-between;
+      -ms-flex-flow: no-wrap space-between;
+          flex-flow: no-wrap space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-.post-list > .post > .description {
+.post-list > .post .content .image {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #c6c6c6;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.post-list > .post .content .image > img {
+  width: 100%;
+  height: 100%;
+}
+.post-list > .post .content > .description {
+  width: 80%;
+  height: 100%;
+  padding: 20px 0 0 20px;
   font-size: calc(10px + 6 * ((100vw - 420px) / 860));
   font-weight: normal;
   text-align: justify;
 }
 @media screen and (min-width: 1280px){
-  .post-list > .post > .description{
+  .post-list > .post .content > .description{
     font-size: 16px;
   }
 }
 @media screen and (max-width: 420px){
-  .post-list > .post > .description{
+  .post-list > .post .content > .description{
     font-size: 10px;
   }
 }
-.post-list > .post > .description > .term {
+.post-list > .post .content > .description > .term {
   background-color: #ffeb3b;
 }
-.post-list > .post > .link {
-  float: left;
+.post-list > .post > .footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2% 0 0 0;
+}
+.post-list > .post > .footer > .link {
+  left: 0;
   text-align: left;
   color: #03638f;
   text-decoration: none;
   margin: 1.3% 0;
 }
-.post-list > .post > .link:hover {
+.post-list > .post > .footer > .link:hover {
   text-decoration: underline;
 }
-.post-list > .post > .tagList {
-  float: right;
-  display: table;
+.post-list > .post > .footer > .tagList {
   text-align: left;
   color: #03638f;
   margin: 1% 0;
 }
-.post-list > .post > .tagList > .tag {
+.post-list > .post > .footer > .tagList > .tag {
   display: table-cell;
   vertical-align: middle;
   padding: 0 0.3%;
 }
-.post-list > .post > .tagList > .tag > a {
+.post-list > .post > .footer > .tagList > .tag > a {
   color: #03638f;
   text-decoration: none;
 }
-.post-list > .post > .tagList > .tag > a:hover {
+.post-list > .post > .footer > .tagList > .tag > a:hover {
   text-decoration: underline;
 }
 .post-content {
@@ -1090,10 +1146,8 @@ body {
   text-decoration: underline;
 }
 .post-content > .header > .image > img {
-  width: 98%;
-  margin: 0 0 1% 1%;
+  width: 100%;
   max-height: 300px;
-  margin: 0.5% 0;
 }
 .post-content > .content {
   width: 98%;

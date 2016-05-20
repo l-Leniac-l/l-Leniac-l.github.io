@@ -6,7 +6,9 @@ description: "This post description is too short."
 date:   2016-02-25 15:44:12
 tags: design development jekyll
 permalink: hello-world/
-author: Lenilson
+image: "/assets/img/space.jpg"
+image-title: "Cover"
+author: "Lenilson Nascimento"
 ---
 
 Hello world!!

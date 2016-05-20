@@ -6,21 +6,27 @@ layout: default
   <section class="post-list">
     {% for post in paginator.posts %}
       <article class="post">
-        <h1 class="title"><a href="{{ post.url | prepend: site.baseurl }}" class="link">{{ post.title }}</a></h1>
-        <small class="date">{{ post.date | date: "%b %-d, %Y" }}</small>
-        {% if post.image %}
-          <figure class="image">
-            <img src="{{post.image}}" {% if post.image-title %}alt="{{post.image-title}}"{% endif %}/>
-          </figure>
-        {% endif %}
-        <p class="description">{{ post.description }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="link">Continue Reading</a>
-        <ul class="tagList">
-          <li class="glyph-icon flaticon-commerce -tag tag"></li>
-          {% for tag in post.tags %}
-          <li class="tag"><a href="/search_results.html?a=2&tag={{tag}}">{{tag}}</a>{% unless forloop.last %} ,{% endunless %}</li>
-          {% endfor %}
-        </ul>
+        <header class="header">
+          <h1 class="title"><a href="{{ post.url | prepend: site.baseurl }}" class="link">{{ post.title }}</a></h1>
+          <small class="date">Writed by {{post.author}}, on {{ post.date | date: "%B %-d, %Y" }} </small>
+        </header>
+        <section class="content">
+          {% if post.image %}
+            <figure class="image">
+              <img src="{{post.image}}" {% if post.image-title %}alt="{{post.image-title}}"{% endif %}/>
+            </figure>
+          {% endif %}
+          <p class="description">{{ post.description }}</p>
+        </section>
+        <footer class="footer">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="link">Continue Reading</a>
+          <ul class="tagList">
+            <li class="glyph-icon flaticon-commerce -tag tag"></li>
+            {% for tag in post.tags %}
+            <li class="tag"><a href="/search_results.html?a=2&tag={{tag}}">{{tag}}</a>{% unless forloop.last %} ,{% endunless %}</li>
+            {% endfor %}
+          </ul>
+        </footer>
       </article>
     {% endfor %}
     <section class="post-pagination">

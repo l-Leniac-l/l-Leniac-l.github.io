@@ -73,14 +73,31 @@ var searchEngine = {
         searchEngine.post_list.empty();
         var appendString1 = '<h1 class="search_msg">Showing results for "'+query+'"</h1>';
         searchEngine.post_list.append(appendString1);
+        var markup = ""+
+        "<article class='post'>"+
+          "<header class='header'>"+
+            "<h1 class='title'><a href='${url}' class='link'>${title}</a></h1>"+
+            "<small class='date'>Writed by ${author}, on ${date}</small>"+
+          "</header>"+
+          "<section class='content'>"+
+            "<figure class='image'>"+
+              "<img src='${image}'/>"+
+            "</figure>"+
+            "<p class=description>${description}</p>"+
+          "</section>"+
+          "<footer class='footer'>"+
+            "<a href='${url}'class='link'>Continue Reading</a>"+
+            "<ul class='tagList'>"+
+              "<li class='glyph-icon flaticon-commerce -tag tag'></li>"+
+              "<li class='tag'>${tags}</li>"+
+            "</ul>"+
+          "</footer>"+
+        "</article>"
+        ;
+        $.template("postTemplate", markup);
         results.forEach(function(result) {
-          var item = loaded_data[result.ref];
-          var appendString = '<article class="post -search">'+
-          '<h1 class="title">' + item.title.split(searchEngine.highlight(query,item.title)).join('<span class="term">'+searchEngine.highlight(query,item.title)+'</span>') + '</h1>'+
-          '<p class="description">' + item.description.split(searchEngine.highlight(query,item.description)).join('<span class="term">'+searchEngine.highlight(query,item.description)+'</span>') + '</p>'+
-          '<a href="'+ item.url + '" class="link">Continue Reading</a>'+
-          '</article>';
-          searchEngine.post_list.append(appendString);
+          item = loaded_data[result.ref];
+          $.tmpl("postTemplate", item).appendTo(".post-list");
         });
       } else {
         searchEngine.post_list.html('<h1 class="search_msg">No results found for "'+query+'"</h1>');

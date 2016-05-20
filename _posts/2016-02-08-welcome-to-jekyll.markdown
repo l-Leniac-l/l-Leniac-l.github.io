@@ -7,8 +7,8 @@ date:   2016-02-08 15:44:12
 tags: jekyll update
 permalink: welcome-to-jekyll/
 image: "/assets/img/space.jpg"
-image-title: Cover
-author: Lenilson
+image-title: "Cover"
+author: "Lenilson Nascimento"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 {{ page.parent }}
