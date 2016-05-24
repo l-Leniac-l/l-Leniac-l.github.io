@@ -1,0 +1,21 @@
+.lazy-loader
+  background-color #f6f6f6
+  background-size cover
+  background-repeat no-repeat
+  position relative
+  overflow hidden
+
+.lazy-loader img
+  position absolute
+  opacity 0
+  top 0
+  left 0
+  width 100%
+  transition opacity 1s linear
+  //filter blur(25px)
+
+.lazy-loader img.loaded
+  opacity 1
+
+.image-small
+  filter blur(50px)

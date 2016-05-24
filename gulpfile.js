@@ -57,7 +57,7 @@ gulp.task('jekyll', () => {
 
 
 gulp.task('uglify', function() {
-  gulp.src(['assets/js/search.js','assets/js/scripts.js'])
+  gulp.src(['assets/js/search.js','assets/js/scripts.js',,'assets/js/lazy-loader.js'])
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename({suffix:'.min'}))

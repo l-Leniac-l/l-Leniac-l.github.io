@@ -6,10 +6,10 @@ layout: default
   <article class="post-content">
     <header class="header">
       {% if page.image %}
-        <figure class="image">
-          <img src="{{page.image}}" {% if post.image-title %}alt="{{page.image-title}}"{% endif %} />
+        <figure class="image lazy-loader" data-large="{{page.image-large}}">
+          <img src="{{page.image}}" class="image-small" {% if post.image-title %}alt="{{page.image-title}}"{% endif %} />
           {% if page.image-title %}
-          <figcaption>{{post.image-title}}</figcaption>
+          <figcaption style="padding-bottom: 300px;">{{post.image-title}}</figcaption>
           {% endif %}
         </figure>
       {% endif %}
