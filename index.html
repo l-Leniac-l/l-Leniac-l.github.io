@@ -1,14 +1,133 @@
+  <!DOCTYPE html>
 <html>
   <head>
 	<meta name="generator" content="Hugo 0.30.2" />
-  <title>
-    Home | Lenilson Nascimento
-  </title>
-</head>
+    <title>
+      Blog | Lenilson Nascimento
+    </title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/mathjax.css">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i" rel="stylesheet">
+  </head>
   <body>
-    <p>This page has <strong>bold</strong> and <em>italics</em> formatting.</p>
+  
 
-<p>Hello world, testando script do deploy</p>
+<h1 id="heading-1">Heading 1</h1>
 
+<h2 id="heading-2">Heading 2</h2>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<h5 id="heading-5">Heading 5</h5>
+
+<h6 id="heading-6">Heading 6</h6>
+
+<p>This is a paragraph with some text.
+Let&rsquo;s try some <strong>bold</strong> and <em>italic</em> text.
+Or we can just <del>strike</del> some text.</p>
+
+<blockquote>
+<p>If you want some citation, you can use a blockquote.<br>
+It&rsquo;s a nice way</p>
+</blockquote>
+
+<p>Unordered lists:</p>
+
+<ul>
+<li>item 1</li>
+<li>item 2</li>
+<li>item 3</li>
+</ul>
+
+<p>Orderes lists:</p>
+
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+
+<p>We can use some <code>code</code> in the text.</p>
+
+<p>Or have a block of code:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">square</span>(x):
+    <span style="color:#66d9ef">return</span> x<span style="color:#f92672">*</span>x</code></pre></div>
+
+<p>We can use some tables</p>
+
+<table>
+<thead>
+<tr>
+<th>Student</th>
+<th>Grade</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Lenilson</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>Fulano</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>Ciclano</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here we have a <a href="https://lnlwd.github.io">link</a></p>
+
+<p>We can set images as well</p>
+
+<p><img src="http://octodex.github.com/images/minion.png" alt="Minion" /></p>
+
+<p>And finnally, let&rsquo;s test some math.</p>
+
+<p><code>$
+\begin{eqnarray}
+y &amp;=&amp; x^4 + 4      \nonumber \\
+  &amp;=&amp; (x^2+2)^2 -4x^2 \nonumber \\
+  &amp;\le&amp;(x^2+2)^2    \nonumber
+\end{eqnarray}
+$</code></p>
+
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
   </body>
 </html>
