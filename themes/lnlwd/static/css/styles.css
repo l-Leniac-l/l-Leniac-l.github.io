@@ -1,0 +1,19 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+blockquote {
+    border-left: 5px solid #cccccc;
+    padding: 5px 0 5px 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: #808080;
+}
+
+blockquote p {
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+}
