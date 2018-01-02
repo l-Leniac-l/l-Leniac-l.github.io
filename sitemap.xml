@@ -19,6 +19,12 @@
   </url>
   
   <url>
+    <loc>http://lnlwd.github.io/post/</loc>
+    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://lnlwd.github.io/tags/</loc>
     <priority>0</priority>
   </url>
@@ -31,12 +37,6 @@
   
   <url>
     <loc>http://lnlwd.github.io/tags/web-developmnt/</loc>
-    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lnlwd.github.io/web-development/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
     <priority>0</priority>
   </url>
