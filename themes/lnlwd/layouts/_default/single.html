@@ -1,3 +1,27 @@
-{{ partial "head.html" . }}
-{{ .Content }}
-{{ partial "footer.html" . }}
+{{ partial "head.html" .}}
+{{ partial "menu.html" .}}
+<main>
+    <article>
+        <header>
+            <h1 class="post-title">{{ .Title }}</h1>
+            <div class="post-meta">
+                {{ if ne .Title "About" }}
+                    <small>Published on {{ .Date.Format "02/01/2006" }}</small>
+                {{ end }}
+                {{ if .Params.tags }}
+                    <small>
+                        <ul class="post-tag-list">
+                            <li>Tags:</li>
+                            {{ range $key, $value := .Params.tags }}
+                            <li><a href="/tags/{{ $value | urlize }}">{{ $value }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </small>
+                {{ end }}
+            </div>
+        </header>
+        {{ .Content }}
+    </article>
+</main>
+{{partial "disqus.html" . }}
+{{ partial "footer.html" .}}

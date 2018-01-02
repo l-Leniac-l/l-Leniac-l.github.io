@@ -1,0 +1,16 @@
+{{ partial "head.html" .}}
+{{ partial "menu.html" .}}
+{{ range (where .Paginator.Pages ".Title" "!=" "About") }}
+<article class="post-preview">
+  <a href="{{ .Permalink }}">
+    <h2 class="post-title">{{ .Title }}</h2>
+  </a>
+  {{ if .Params.description }}
+    {{ .Params.description }}
+  {{ else }}
+    {{ .Summary }}
+  {{ end }}
+  <a href="{{ .Permalink }}">[Continue reading...]</a>
+</article>
+{{ end }}
+{{ partial "footer.html" .}}

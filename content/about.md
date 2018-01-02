@@ -1,7 +1,7 @@
-+++
-title = "About"
-layout = "about"
-+++
+---
+title: "About"
+date: 2018-01-02T16:16:15-02:00
+draft: false
+---
 
-About abou about.
-
+About About About

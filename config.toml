@@ -2,3 +2,6 @@ baseURL = "http://lnlwd.github.io/"
 languageCode = "en-us"
 title = "Lenilson Nascimento"
 theme = "lnlwd"
+disqusShortname = "lnlwd"
+[taxonomies]
+  tag = "tags"
