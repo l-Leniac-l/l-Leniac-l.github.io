@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lenilson Nascimento</title>
+    <link>http://lnlwd.github.io/</link>
+    <description>Recent content on Lenilson Nascimento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Jan 2018 16:16:15 -0200</lastBuildDate>
+    
+	<atom:link href="http://lnlwd.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://lnlwd.github.io/about/</link>
+      <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
+      
+      <guid>http://lnlwd.github.io/about/</guid>
+      <description>About About About</description>
+    </item>
+    
+    <item>
+      <title>Post caralhudo de bom</title>
+      <link>http://lnlwd.github.io/post-do-caralho/</link>
+      <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
+      
+      <guid>http://lnlwd.github.io/post-do-caralho/</guid>
+      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 This is a paragraph with some text. Let&amp;rsquo;s try some bold and italic text. Or we can just strike some text.
+ If you want some citation, you can use a blockquote.
+It&amp;rsquo;s a nice way
+ Unordered lists:
+ item 1 item 2 item 3  Orderes lists:
+ Item 1 Item 2 Item 3  We can use some code in the text.</description>
+    </item>
+    
+  </channel>
+</rss>
