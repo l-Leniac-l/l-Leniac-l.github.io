@@ -1,5 +1,11 @@
 DATETIMENOW = $(shell date --iso=seconds)
 
+sign-all:
+	./scripts/sign-all
+
+verify-all-signed:
+	./scripts/verify-all-signed
+
 server:
 	hugo server --buildDrafts --bind 192.168.0.100 --disableFastRender
 

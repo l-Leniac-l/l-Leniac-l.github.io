@@ -1,0 +1,6 @@
+#!/bin/sh
+for file in ./content/posts/*.md
+do
+  ./scripts/sign $file
+  echo "Signed $file"
+done
