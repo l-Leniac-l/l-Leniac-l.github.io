@@ -21,6 +21,12 @@
             </div>
         </header>
         {{ .Content }}
+        {{ if .Params.post }}
+            <small class="post-sign">You can make sure that the author wrote this post by copy-pasting
+                <a href="https://raw.githubusercontent.com/lnlwd/lnlwd.github.io/hugo/signed_posts/{{.File.LogicalName}}.asc" target="_blank">this signature</a>
+                into this <a href="https://keybase.io/verify" target="_blank">Keybase page</a>.
+            </small>
+        {{ end }}
     </article>
 </main>
 {{partial "disqus.html" . }}

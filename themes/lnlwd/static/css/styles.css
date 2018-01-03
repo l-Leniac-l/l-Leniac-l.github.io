@@ -81,3 +81,13 @@ a, a:visited, a:hover, a:active {
 .post-tag-list > li {
     margin-left: 8px;
 }
+
+.post-sign {
+    display: block;
+    margin: 50px 0;
+    color: grey;
+}
+
+.post-sign > a {
+    color: grey;
+}

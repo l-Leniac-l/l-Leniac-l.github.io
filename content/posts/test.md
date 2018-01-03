@@ -6,6 +6,7 @@ url: "/post-do-caralho"
 description: "Testando saporra pra ver se funfa"
 tags: [ "Web Developmnt", "Test" ]
 comments: true
+post: true
 ---
 
 # Heading 1
