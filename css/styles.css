@@ -17,6 +17,7 @@ body {
 }
 
 img {
+    display: block;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -82,6 +83,10 @@ a, a:visited, a:hover, a:active {
     margin-left: 8px;
 }
 
+.post-content {
+    text-align: justify;
+}
+
 .post-sign {
     display: block;
     margin: 50px 0;
@@ -90,4 +95,9 @@ a, a:visited, a:hover, a:active {
 
 .post-sign > a {
     color: grey;
+}
+
+img[src$='#profile-image'] {
+    max-width: 50%;
+    border-radius: 50%;
 }

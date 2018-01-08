@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Gitflow e Entrega Continua | Lenilson Nascimento
+    </title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/mathjax.css">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<header>
+    <nav class="menu">
+        <ul>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article>
+        <header>
+            
+                <h1 class="post-title">Gitflow e Entrega Continua</h1>
+            
+            <div class="post-meta">
+                
+                    <small>Published on 08/01/2018</small>
+                
+                
+                    <small>
+                        <ul class="post-tag-list">
+                            <li>Tags:</li>
+                            
+                            <li><a href="/tags/gitflow">gitflow</a></li>
+                            
+                            <li><a href="/tags/ci-cd">ci-cd</a></li>
+                            
+                            <li><a href="/tags/devops">devops</a></li>
+                            
+                        </ul>
+                    </small>
+                
+            </div>
+        </header>
+        <div class="post-content">
+            <p>Um dos maiores desafios nos últimos anos tem sido entregar software com velocidade e qualidade.</p>
+
+<p>Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas entregas em uma frequência considerável e
+mantendo o padrão esperado pelo cliente. Tanto é que tentamos aplicar todos os tipos de técnicas agile disponíveis,
+como o scrum, kanban, MSF, XP, etc, etc.</p>
+
+<p>No entanto, nenhuma dessas técnicas parece realmente eficiente quando o fluxo de entrega não é realmente eficiente. Claro que
+sei reconhecer a eficácia de métodos como scrum que realmente agilizam processos de trabalho. Mas concorda comigo que agilizar
+o processo de desenvolvimento é apenas uma parte do pacote?</p>
+
+<p>Responda rapidamente essas perguntas:</p>
+
+<p>Você já atrasou a entrega de um sprint porque o carinha que administra os servidores estava ocupado?
+Ou porque sua equipe não tem acesso aos servidores?
+Ou porque o commit do fulano estava dando conflito com do beltrano?
+Ou porque a outra equipe estava na frente na fila de deploy?</p>
+
+<p>Vejo muitas empresas tentando resolver seus problemas contratando um &ldquo;profissional de DevOps&rdquo;. Calma, que já vou explicar
+o porquê das aspas.</p>
+
+<p>É que na verdade DevOps é mais um processo que um profissional especializado em algo. Esse processo surgiu da necessidade
+de integrar os processos de Dev (desenvolvimento, teste, etc) aos processos de Ops (deploy, configuração de servidor, etc).
+Nem sempre a solução para os problemas de entrega é contratar um DevOps master top das galáxias. Com um pouco de organização
+e um alinhamento adequado nos processos da equipe, pode-se conseguir os mesmos resultados ou até melhores.</p>
+
+<p>Não existe fórmula mágica para entregar software. A receita desse bolo varia de empresa para empresa, de equipe para equipe.</p>
+
+<p>Claro que algumas técnicas podem se tornar úteis com alguns ajustes aqui e ali. Exatamente como fizemos na <a href="http://www.1sti.com.br" target="_blank">@1sti</a>.</p>
+
+<p>Gosto de contar as histórias do início, então vamos lá!</p>
+
+<p>No começo nosso processo funcionava mais ou menos assim (posso me esquecer de algo, pois faz um tempinho que migramos):</p>
+
+<ol>
+<li>Fulano clona o repositório, faz suas alterações, sobe numa branch (isso quando não ia direto pra master).</li>
+<li>Ciclano da um pull, faz o que for necesário e sobe novamente.</li>
+<li>No final, alguém subia uma versão de teste pro cliente por ssh em um servidor (até hoje não sei quem era esse alguém).</li>
+<li>Correções eram feitas em cima dos testes, e no fim uma versão era colocada nesse mesmo servidor pra &ldquo;produção&rdquo;.</li>
+</ol>
+
+<p>Não consigo nem preciso citar todas as falhas que aconteciam nesse processo. Quantas vezes tínhamos que ficar revertendo commits,
+resetando branches, falando no ouvido do fulano que não resolveu conflito, etc. Sem contar que quando tínhamos que colocar algo em
+produção éramos obrigados a pedir todo mundo não commitar nada na master já que todo mundo tinha esse costume.</p>
+
+        </div>
+        
+            <small class="post-sign">You can make sure that the author wrote this post by copy-pasting
+                <a href="https://raw.githubusercontent.com/lnlwd/lnlwd.github.io/hugo/signed_posts/gitflow-e-entrega-continua.md.asc" target="_blank">this signature</a>
+                into this <a href="https://keybase.io/verify" target="_blank">Keybase page</a>.
+            </small>
+        
+    </article>
+</main>
+
+  
+    <div class="comments">
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lnlwd" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  
+
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  </body>
+</html>

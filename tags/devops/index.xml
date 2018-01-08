@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lenilson Nascimento</title>
-    <link>http://lnlwd.github.io/</link>
-    <description>Recent content on Lenilson Nascimento</description>
+    <title>Devops on Lenilson Nascimento</title>
+    <link>http://lnlwd.github.io/tags/devops/</link>
+    <description>Recent content in Devops on Lenilson Nascimento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Jan 2018 13:00:29 -0200</lastBuildDate>
     
-	<atom:link href="http://lnlwd.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://lnlwd.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,19 +20,6 @@
       <description>Um dos maiores desafios nos últimos anos tem sido entregar software com velocidade e qualidade.
 Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas entregas em uma frequência considerável e mantendo o padrão esperado pelo cliente. Tanto é que tentamos aplicar todos os tipos de técnicas agile disponíveis, como o scrum, kanban, MSF, XP, etc, etc.
 No entanto, nenhuma dessas técnicas parece realmente eficiente quando o fluxo de entrega não é realmente eficiente.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://lnlwd.github.io/about/</link>
-      <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
-      
-      <guid>http://lnlwd.github.io/about/</guid>
-      <description>Hey there, that&amp;rsquo;s me.
-It&amp;rsquo;s a little hard to talk about myself, but i will give it a try.
-I&amp;rsquo;m a 23 years old developer living in Brazil and working for an amazing company called 1STi.
-I have been an enthusiast my entire life and i love discovering new stuff and talk about that.
-This website is a place where i will talk about anything in my mind, or anything that i work with, so you&amp;rsquo;ll se a lot of subjects here like: Deep Learning, Big Data, DevOps and Continuous Delivery, General programming and anything else you can think about.</description>
     </item>
     
   </channel>

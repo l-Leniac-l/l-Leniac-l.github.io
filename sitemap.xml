@@ -3,41 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lnlwd.github.io/gitflow-e-entrega-continua/</loc>
+    <lastmod>2018-01-08T13:00:29-02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lnlwd.github.io/about/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://lnlwd.github.io/post-do-caralho/</loc>
-    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <loc>http://lnlwd.github.io/tags/ci-cd/</loc>
+    <lastmod>2018-01-08T13:00:29-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lnlwd.github.io/tags/devops/</loc>
+    <lastmod>2018-01-08T13:00:29-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lnlwd.github.io/tags/gitflow/</loc>
+    <lastmod>2018-01-08T13:00:29-02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://lnlwd.github.io/</loc>
-    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <lastmod>2018-01-08T13:00:29-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://lnlwd.github.io/posts/</loc>
-    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <lastmod>2018-01-08T13:00:29-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://lnlwd.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lnlwd.github.io/tags/test/</loc>
-    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lnlwd.github.io/tags/web-developmnt/</loc>
-    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <lastmod>2018-01-08T13:00:29-02:00</lastmod>
     <priority>0</priority>
   </url>
   
