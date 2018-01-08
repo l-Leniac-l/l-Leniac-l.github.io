@@ -101,3 +101,12 @@ a, a:visited, a:hover, a:active {
     max-width: 50%;
     border-radius: 50%;
 }
+
+.highlight pre {
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+code[class^="language"] {
+    font-family: 'Anonymous Pro', monospace;
+}
