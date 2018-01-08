@@ -5,3 +5,5 @@ theme = "lnlwd"
 disqusShortname = "lnlwd"
 [taxonomies]
   tag = "tags"
+[blackfriday]
+  hrefTargetBlank = true

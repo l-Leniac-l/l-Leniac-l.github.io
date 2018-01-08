@@ -3,7 +3,9 @@
 <main>
     <article>
         <header>
-            <h1 class="post-title">{{ .Title }}</h1>
+            {{ if ne .Title "About" }}
+                <h1 class="post-title">{{ .Title }}</h1>
+            {{ end }}
             <div class="post-meta">
                 {{ if ne .Title "About" }}
                     <small>Published on {{ .Date.Format "02/01/2006" }}</small>
@@ -20,7 +22,9 @@
                 {{ end }}
             </div>
         </header>
-        {{ .Content }}
+        <div class="post-content">
+            {{ .Content }}
+        </div>
         {{ if .Params.post }}
             <small class="post-sign">You can make sure that the author wrote this post by copy-pasting
                 <a href="https://raw.githubusercontent.com/lnlwd/lnlwd.github.io/hugo/signed_posts/{{.File.LogicalName}}.asc" target="_blank">this signature</a>
