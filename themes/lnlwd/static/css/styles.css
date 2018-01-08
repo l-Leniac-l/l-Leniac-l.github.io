@@ -97,7 +97,7 @@ a, a:visited, a:hover, a:active {
     color: grey;
 }
 
-img[src$='#profile-image'] {
+.profile-image {
     max-width: 50%;
     border-radius: 50%;
 }

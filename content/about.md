@@ -4,7 +4,8 @@ date: 2018-01-02T16:16:15-02:00
 draft: false
 ---
 
-![Lenilson Nascimento](/img/me.jpg#profile-image)
+
+<img src="/img/me.jpg" class="profile-image" />
 
 Hey there, that's me.
 
