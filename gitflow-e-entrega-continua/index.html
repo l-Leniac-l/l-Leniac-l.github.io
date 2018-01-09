@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      Gitflow e Entrega Continua | Lenilson Nascimento
+      Gitflow e Entrega Contínua | Lenilson Nascimento
     </title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -23,7 +23,7 @@
     <article>
         <header>
             
-                <h1 class="post-title">Gitflow e Entrega Continua</h1>
+                <h1 class="post-title">Gitflow e Entrega Contínua</h1>
             
             <div class="post-meta">
                 
@@ -51,8 +51,8 @@
 <p>Tornar-se conhecida e recomendada por nossos clientes como uma startup que entrega software com qualidade e no prazo não
 foi um proceso que aconteceu da noite para o dia.</p>
 
-<p>Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas entregas em uma frequência considerável e
-com o padrão esperado pelo cliente. Tanto é que tentamos aplicar todos os tipos de técnicas agile disponíveis,
+<p>Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas entregas com uma frequência considerável e
+o padrão esperado pelo cliente. Tanto é que tentamos aplicar todos os tipos de técnicas agile disponíveis,
 como o scrum, kanban, MSF, XP, etc, etc.</p>
 
 <p>No entanto, nenhuma dessas técnicas parece realmente funcionar quando o fluxo de entrega não é eficiente. Claro que
@@ -72,7 +72,7 @@ o porquê das aspas.</p>
 <p>É que na verdade DevOps é mais um processo que um profissional especializado em algo. Esse processo surgiu da necessidade
 de integrar os processos de Dev (desenvolvimento, teste, etc) aos processos de Ops (deploy, configuração de servidor, etc).
 E nem sempre a solução para os problemas de entrega é contratar um DevOps master top das galáxias. Com um pouco de organização
-e um alinhamento adequado da equipe, pode-se conseguir os mesmos resultados ou até melhores.</p>
+e um alinhamento adequado da equipe, pode-se atingir os mesmos resultados ou até melhores.</p>
 
 <p>Não existe fórmula mágica para entregar software. A receita desse bolo varia de empresa para empresa, de equipe para equipe.</p>
 
@@ -106,7 +106,7 @@ desenvolvimento cada dia mais perigoso.</p>
 <p>Qualquer erro naquele processo precário e manual poderia mandar pelos ares toda credibilidade que conquistamos com nosso
 primeiro produto. Provavelmente perderíamos o cliente e voltaríamos ao ponto zero.</p>
 
-<p>Não há como esquecer aquele domingo de madrugada que o servidor ficou indisponível e temíamos amargamente que o na manhã da
+<p>Não há como esquecer aquele domingo de madrugada que o servidor ficou indisponível e temíamos amargamente que na manhã da
 segunda o cliente não conseguisse acessar o sistema. Por sorte isso não aconteceu.</p>
 
 <p>Sabíamos que era hora de mudar nosso processo e parte da nossa infraestrutura. Estava claro que deploy manual não era uma
@@ -134,7 +134,7 @@ oficial, a única forma de atualizar o código é por meio de pull requests.</p>
 
 <h3 id="2-forks-descentralizados">2. Forks descentralizados</h3>
 
-<p>Cada dev tem seu próprio fork do repositório oficial e é no seu fork onde ele vai criar as branches de <em>feature</em> e <em>hotfix</em>.
+<p>Cada dev tem seu próprio fork do repositório oficial e é no seu fork que ele vai criar as branches de <em>feature</em> e <em>hotfix</em>.
 As branches podem ser compartilhadas entre os forks para que devs tenham acesso ao código um do outro através de um pull,
 sendo assim descentralizadas. Basta que um dev adicione o outro como remote.</p>
 
@@ -160,7 +160,7 @@ a <em>development</em> e o outro dê um pull dela.</p>
 <h3 id="3-hotfixes-à-partir-da-master">3. Hotfixes à partir da master</h3>
 
 <p>Uma forma de facilitar correções de bugs que já estão em produção é criar uma branch de <em>hotfix</em> à partir da <em>master</em>. Na maioria
-das vezes se consegue fazer o merge dessa branch tanto em <em>master</em> quanto em <em>dev</em>.</p>
+das vezes consegue-se fazer o merge dessa branch tanto em <em>master</em> quanto em <em>dev</em>.</p>
 
 <p>Imagine que precisamos corrigir algo, podemos fazer assim:</p>
 
@@ -173,7 +173,8 @@ git pull origin master <span style="color:#75715e">#atualizando com o repositór
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git commit
 git push me hotfix-bugx #fazendo push para uma branch no meu fork</code></pre></div>
 
-<p>Agora basta abrir um pull request para a master do repositório oficial!</p>
+<p>Agora basta abrir um pull request para a <em>master</em> do repositório oficial! Podemos fazer também um pull request para a branch
+<em>development</em> ou dar um pull da <em>master</em> na <em>development</em>.</p>
 
 <h3 id="4-enviando-versão-para-produção">4. Enviando versão para produção</h3>
 
@@ -206,8 +207,8 @@ processo. Utilizamos o <a href="https://www.wercker.com/" target="_blank">Wercke
 tal.</p>
 
 <p>Tudo que precisamos fazer foi configurar o Wercker para que qualquer commit na branch <em>master</em> disparasse uma pipeline que
-geraria um novo container, faria o deploy do mesmo para o Google Container Registry e então faria um update no Deploy do
-Kubernetes, atualizando assim a versão de produção. Repetimos o processo para <em>development</em> e pronto! Easy peasy lemon squeezy!</p>
+geraria um novo container, faria o deploy do mesmo para o Google Container Registry e então faria um update no Kubernetes,
+atualizando assim a versão de produção. Repetimos o processo para <em>development</em> e pronto! Easy peasy lemon squeezy!</p>
 
 <p>Agora para fazer o deploy de uma nova versão basta fazer o merge do pull request. O resto é com o Wercker e o Kubernetes.
 O processo de deploy leva entre 3 e 5 minutos!</p>
