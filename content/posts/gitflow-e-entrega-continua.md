@@ -1,5 +1,5 @@
 ---
-title: "Gitflow e Entrega Continua"
+title: "Gitflow e Entrega Contínua"
 date: 2018-01-08T13:00:29-02:00
 draft: false
 url: "/gitflow-e-entrega-continua"
@@ -12,8 +12,8 @@ post: true
 Tornar-se conhecida e recomendada por nossos clientes como uma startup que entrega software com qualidade e no prazo não 
 foi um proceso que aconteceu da noite para o dia.
 
-Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas entregas em uma frequência considerável e
-com o padrão esperado pelo cliente. Tanto é que tentamos aplicar todos os tipos de técnicas agile disponíveis, 
+Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas entregas com uma frequência considerável e
+o padrão esperado pelo cliente. Tanto é que tentamos aplicar todos os tipos de técnicas agile disponíveis, 
 como o scrum, kanban, MSF, XP, etc, etc.
 
 No entanto, nenhuma dessas técnicas parece realmente funcionar quando o fluxo de entrega não é eficiente. Claro que 
@@ -33,7 +33,7 @@ o porquê das aspas.
 É que na verdade DevOps é mais um processo que um profissional especializado em algo. Esse processo surgiu da necessidade 
 de integrar os processos de Dev (desenvolvimento, teste, etc) aos processos de Ops (deploy, configuração de servidor, etc).
 E nem sempre a solução para os problemas de entrega é contratar um DevOps master top das galáxias. Com um pouco de organização 
-e um alinhamento adequado da equipe, pode-se conseguir os mesmos resultados ou até melhores.
+e um alinhamento adequado da equipe, pode-se atingir os mesmos resultados ou até melhores.
 
 Não existe fórmula mágica para entregar software. A receita desse bolo varia de empresa para empresa, de equipe para equipe.
 
@@ -65,7 +65,7 @@ desenvolvimento cada dia mais perigoso.
 Qualquer erro naquele processo precário e manual poderia mandar pelos ares toda credibilidade que conquistamos com nosso 
 primeiro produto. Provavelmente perderíamos o cliente e voltaríamos ao ponto zero.
 
-Não há como esquecer aquele domingo de madrugada que o servidor ficou indisponível e temíamos amargamente que o na manhã da 
+Não há como esquecer aquele domingo de madrugada que o servidor ficou indisponível e temíamos amargamente que na manhã da 
 segunda o cliente não conseguisse acessar o sistema. Por sorte isso não aconteceu.
 
 Sabíamos que era hora de mudar nosso processo e parte da nossa infraestrutura. Estava claro que deploy manual não era uma 
@@ -93,7 +93,7 @@ Nossos repositórios oficiais ficam com a seguinte estrutura:
 
 ### 2. Forks descentralizados
 
-Cada dev tem seu próprio fork do repositório oficial e é no seu fork onde ele vai criar as branches de *feature* e *hotfix*.
+Cada dev tem seu próprio fork do repositório oficial e é no seu fork que ele vai criar as branches de *feature* e *hotfix*.
 As branches podem ser compartilhadas entre os forks para que devs tenham acesso ao código um do outro através de um pull, 
 sendo assim descentralizadas. Basta que um dev adicione o outro como remote.
 
@@ -117,7 +117,7 @@ a *development* e o outro dê um pull dela.
 ### 3. Hotfixes à partir da master
 
 Uma forma de facilitar correções de bugs que já estão em produção é criar uma branch de *hotfix* à partir da *master*. Na maioria
-das vezes se consegue fazer o merge dessa branch tanto em *master* quanto em *dev*.
+das vezes consegue-se fazer o merge dessa branch tanto em *master* quanto em *dev*.
 
 Imagine que precisamos corrigir algo, podemos fazer assim:
 
@@ -134,7 +134,8 @@ git commit
 git push me hotfix-bugx #fazendo push para uma branch no meu fork
 {{< / highlight >}}
 
-Agora basta abrir um pull request para a master do repositório oficial!
+Agora basta abrir um pull request para a *master* do repositório oficial! Podemos fazer também um pull request para a branch 
+*development* ou dar um pull da *master* na *development*.
 
 ### 4. Enviando versão para produção
 
@@ -167,8 +168,8 @@ processo. Utilizamos o [Wercker](https://www.wercker.com/) - que mais tarde naqu
 tal.
 
 Tudo que precisamos fazer foi configurar o Wercker para que qualquer commit na branch *master* disparasse uma pipeline que 
-geraria um novo container, faria o deploy do mesmo para o Google Container Registry e então faria um update no Deploy do 
-Kubernetes, atualizando assim a versão de produção. Repetimos o processo para *development* e pronto! Easy peasy lemon squeezy!
+geraria um novo container, faria o deploy do mesmo para o Google Container Registry e então faria um update no Kubernetes, 
+atualizando assim a versão de produção. Repetimos o processo para *development* e pronto! Easy peasy lemon squeezy!
 
 Agora para fazer o deploy de uma nova versão basta fazer o merge do pull request. O resto é com o Wercker e o Kubernetes. 
 O processo de deploy leva entre 3 e 5 minutos!
