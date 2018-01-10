@@ -2,7 +2,7 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'PT Sans', sans-serif;
 }
 
 body {
@@ -84,7 +84,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .post-content {
-    text-align: justify;
+    text-align: left;
 }
 
 .post-sign {
@@ -108,5 +108,5 @@ a, a:visited, a:hover, a:active {
 }
 
 code[class^="language"] {
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'PT Sans', sans-serif;
 }
