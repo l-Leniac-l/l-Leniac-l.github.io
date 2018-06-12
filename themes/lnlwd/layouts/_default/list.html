@@ -1,5 +1,9 @@
 {{ partial "head.html" .}}
 {{ partial "menu.html" .}}
+<div class="language-select">
+  <a href="{{ .Site.BaseURL }}/tags/pt">PT</a>&nbsp;&nbsp;&nbsp;
+  <a href="{{ .Site.BaseURL }}/tags/en">EN</a>
+</div>
 {{ range (where .Paginator.Pages ".Title" "!=" "About") }}
 <article class="post-preview">
   <a href="{{ .Permalink }}">

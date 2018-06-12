@@ -4,7 +4,7 @@ date: 2018-01-08T13:00:29-02:00
 draft: false
 url: "/why-are-we-making-the-web-so-complicated"
 description: "A reflection about the actual state of web apps development and the core concept of the web: simplicity"
-tags: ["reflection", "web-apps", "development"]
+tags: ["en", "reflection", "web-apps", "development"]
 comments: true
 post: true
 ---

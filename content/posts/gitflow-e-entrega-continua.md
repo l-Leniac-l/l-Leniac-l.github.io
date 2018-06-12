@@ -4,7 +4,7 @@ date: 2018-01-08T13:00:29-02:00
 draft: false
 url: "/gitflow-e-entrega-continua"
 description: "Um pouco sobre processos de entrega contínua e como nos fizemos conhecidos como a startup que entrega no prazo."
-tags: ["gitflow", "ci-cd", "devops"]
+tags: ["pt", "gitflow", "ci-cd", "devops"]
 comments: true
 post: true
 ---
