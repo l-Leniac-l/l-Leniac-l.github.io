@@ -6,20 +6,10 @@
     <description>Recent content on Lenilson Nascimento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jan 2018 13:00:29 -0200</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jan 2018 16:16:15 -0200</lastBuildDate>
     
 	<atom:link href="http://lnlwd.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Gitflow e Entrega Contínua</title>
-      <link>http://lnlwd.github.io/gitflow-e-entrega-continua/</link>
-      <pubDate>Mon, 08 Jan 2018 13:00:29 -0200</pubDate>
-      
-      <guid>http://lnlwd.github.io/gitflow-e-entrega-continua/</guid>
-      <description>Tornar-se conhecida e recomendada por nossos clientes como uma startup que entrega software com qualidade e no prazo não foi um proceso que aconteceu da noite para o dia.
-Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas entregas com uma frequência considerável e o padrão esperado pelo cliente. Tanto é que tentamos aplicar todos os tipos de técnicas agile disponíveis, como o scrum, kanban, MSF, XP, etc, etc.</description>
-    </item>
     
     <item>
       <title>About</title>
@@ -27,11 +17,11 @@ Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas 
       <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
       
       <guid>http://lnlwd.github.io/about/</guid>
-      <description>Hey there, that&amp;rsquo;s me.
-It&amp;rsquo;s a little hard to talk about myself, but i will give it a try.
-I&amp;rsquo;m a 23 years old developer living in Brazil and working for an amazing company called 1STi.
-I have been an enthusiast my entire life and i love discovering new stuff and talk about that.
-This website is a place where i will talk about anything in my mind, or anything that i work with, so you&amp;rsquo;ll se a lot of subjects here like: Deep Learning, Big Data, DevOps and Continuous Delivery, General programming and anything else you can think about.</description>
+      <description>Hi there, that&amp;rsquo;s me.
+I&amp;rsquo;m a 23 years old developer living in Brazil.
+I have been an enthusiast my entire life and I love discover and share new things.
+In thins website I will talk about anything in my mind, or anything that I&amp;rsquo;m working on, so you&amp;rsquo;ll read about everything here.
+That&amp;rsquo;s it. I&amp;rsquo;m glad you&amp;rsquo;re here!</description>
     </item>
     
   </channel>
