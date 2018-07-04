@@ -7,15 +7,12 @@ draft: false
 
 <img src="/img/me.jpg" class="profile-image" />
 
-Hey there, that's me.
+Hi there, that's me.
 
-It's a little hard to talk about myself, but i will give it a try.
+I'm a 23 years old developer living in Brazil.
 
-I'm a 23 years old developer living in Brazil and working for an amazing company called [1STi](http://www.1sti.com.br/).
+I have been an enthusiast my entire life and I love discover and share new things.
 
-I have been an enthusiast my entire life and i love discovering new stuff and talk about that.
-
-This website is a place where i will talk about anything in my mind, or anything that i work with, so you'll se a lot of subjects here 
-like: Deep Learning, Big Data, DevOps and Continuous Delivery, General programming and anything else you can think about.
+In thins website I will talk about anything in my mind, or anything that I'm working on, so you'll read about everything here.
 
 That's it. I'm glad you're here!
