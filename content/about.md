@@ -13,6 +13,15 @@ I'm a 23 years old developer living in Brazil.
 
 I have been an enthusiast my entire life and I love discover and share new things.
 
-In thins website I will talk about anything in my mind, or anything that I'm working on, so you'll read about everything here.
+In this website I will talk about anything in my mind, or anything that I'm working on, so you'll read about everything here.
 
 That's it. I'm glad you're here!
+
+Follow me on social networks:
+
+[Github](https://www.github.com/lnlwd)
+[Facebook](https://www.facebook.com/lnlwd)
+[Twitter](https://twitter.com/@thelenilson)
+[Instagram](https://www.instagram.com/thelenilson/)
+[YouTube](https://www.youtube.com/channel/UCmGQHT3kG0mVTuRCJnuMvDg)
+[Twitch](https://twitch.tv/lennycode)

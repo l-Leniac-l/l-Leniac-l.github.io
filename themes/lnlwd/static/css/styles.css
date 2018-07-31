@@ -2,12 +2,13 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
     width: 720px;
     margin: 0 auto;
+    background: #fcfcfc;
 }
 
 @media screen and (max-width: 720px) {
@@ -36,7 +37,8 @@ blockquote p {
 }
 
 a, a:visited, a:hover, a:active {
-  color: #66d9ef;
+  //color: #66d9ef;
+  color: #202020;
 }
 
 .menu {
@@ -48,20 +50,25 @@ a, a:visited, a:hover, a:active {
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.menu > ul > li:not(:first-of-type) {
+    margin-left: 10px;
 }
 
 .menu > ul > li > a {
     text-decoration: none;
 }
 
-.post-title {
-    text-align: center;
+.post-list a {
+    display: block;
+    margin-bottom: 7px;
 }
 
-.post-preview .post-title {
-    text-align: left;
-    color: #202020;
+.post-title {
+    text-align: center;
 }
 
 .post-meta {
