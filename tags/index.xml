@@ -10,5 +10,23 @@
 	<atom:link href="http://lnlwd.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Test</title>
+      <link>http://lnlwd.github.io/tags/test/</link>
+      <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
+      
+      <guid>http://lnlwd.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Developmnt</title>
+      <link>http://lnlwd.github.io/tags/web-developmnt/</link>
+      <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
+      
+      <guid>http://lnlwd.github.io/tags/web-developmnt/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

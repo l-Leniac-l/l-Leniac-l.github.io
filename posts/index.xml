@@ -6,19 +6,23 @@
     <description>Recent content in Posts on Lenilson Nascimento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jan 2018 13:00:29 -0200</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jan 2018 16:16:15 -0200</lastBuildDate>
     
 	<atom:link href="http://lnlwd.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Gitflow e Entrega Contínua</title>
-      <link>http://lnlwd.github.io/gitflow-e-entrega-continua/</link>
-      <pubDate>Mon, 08 Jan 2018 13:00:29 -0200</pubDate>
+      <title>Post caralhudo de bom</title>
+      <link>http://lnlwd.github.io/post-do-caralho/</link>
+      <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
       
-      <guid>http://lnlwd.github.io/gitflow-e-entrega-continua/</guid>
-      <description>Tornar-se conhecida e recomendada por nossos clientes como uma startup que entrega software com qualidade e no prazo não foi um proceso que aconteceu da noite para o dia.
-Nós devs sabemos o quanto é difícil encontrar um método que mantenha nossas entregas com uma frequência considerável e o padrão esperado pelo cliente. Tanto é que tentamos aplicar todos os tipos de técnicas agile disponíveis, como o scrum, kanban, MSF, XP, etc, etc.</description>
+      <guid>http://lnlwd.github.io/post-do-caralho/</guid>
+      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 This is a paragraph with some text. Let&amp;rsquo;s try some bold and italic text. Or we can just strike some text.
+ If you want some citation, you can use a blockquote.
+It&amp;rsquo;s a nice way
+ Unordered lists:
+ item 1 item 2 item 3  Orderes lists:
+ Item 1 Item 2 Item 3  We can use some code in the text.</description>
     </item>
     
   </channel>
