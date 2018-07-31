@@ -2,12 +2,7 @@
 {{ partial "menu.html" .}}
 <section class="post-list">
   {{ range (where .Paginator.Pages ".Title" "!=" "About") }}
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ .Permalink }}">({{.Params.lang}}) {{ .Title }}</a>
   {{ end }}
-  <a href="/post-do-caralho">Testando saporra pra ver se funfa</a>
-  <a href="/post-do-caralho">Esse post aqui é dahora em</a>
-  <a href="/post-do-caralho">Testing and english title too</a>
-  <a href="/post-do-caralho">Maybe adding another post</a>
-  <a href="/post-do-caralho">YEAH! Let's make this shit happen</a>
 </section>
 {{ partial "footer.html" .}}

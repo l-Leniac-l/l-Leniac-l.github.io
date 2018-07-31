@@ -1,12 +1,13 @@
 ---
 title: "Post caralhudo de bom"
 date: 2018-01-02T16:16:15-02:00
-draft: false
+draft: true
 url: "/post-do-caralho"
 description: "Testando saporra pra ver se funfa"
 tags: [ "Web Developmnt", "Test" ]
 comments: true
 post: true
+lang: PT
 ---
 
 # Heading 1
