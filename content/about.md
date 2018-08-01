@@ -17,6 +17,10 @@ In this website I will talk about anything in my mind, or anything that I'm work
 
 That's it. I'm glad you're here!
 
+### Contact info
+
+You can send me an email at [lenilson.100@gmail.com](mailto:lenilson.100@gmail.com)
+
 Follow me on social networks:
 
 [Github](https://www.github.com/lnlwd)
