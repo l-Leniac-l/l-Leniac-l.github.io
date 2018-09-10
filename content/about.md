@@ -23,8 +23,8 @@ You can send me an email at [lenilson.100@gmail.com](mailto:lenilson.100@gmail.c
 
 Follow me on social networks:
 
-[Github](https://www.github.com/lnlwd)
-[Facebook](https://www.facebook.com/lnlwd)
+[Github](https://www.github.com/thelenilson)
+[Facebook](https://www.facebook.com/thelenilson)
 [Twitter](https://twitter.com/@thelenilson)
 [Instagram](https://www.instagram.com/thelenilson/)
 [YouTube](https://www.youtube.com/channel/UCmGQHT3kG0mVTuRCJnuMvDg)
