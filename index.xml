@@ -12,16 +12,6 @@
     
     
     <item>
-      <title>5 tips that will make you a better developer</title>
-      <link>http://thelenilson.com/5-tips-that-will-make-you-a-better-developer/</link>
-      <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
-      
-      <guid>http://thelenilson.com/5-tips-that-will-make-you-a-better-developer/</guid>
-      <description>Being a good developer is far away from just having technical skills or knowing well the language you code. In my career working with companies, I saw people starting from zero becoming the best developers on the team, and also senior developers become useless. But what did happen to this people? How can a junior become an expert and those who are considered experts become outdated?
-There are some things I want to share with you.</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>http://thelenilson.com/about/</link>
       <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
@@ -34,6 +24,16 @@ In this website I will talk about anything in my mind, or anything that I&amp;rs
 That&amp;rsquo;s it. I&amp;rsquo;m glad you&amp;rsquo;re here!
 Contact info You can send me an email at lenilson.100@gmail.com
 Follow me on social networks:</description>
+    </item>
+    
+    <item>
+      <title>5 tips that will make you a better developer</title>
+      <link>http://thelenilson.com/5-tips-that-will-make-you-a-better-developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://thelenilson.com/5-tips-that-will-make-you-a-better-developer/</guid>
+      <description>Being a good developer is far away from just having technical skills or knowing well the language you code. In my career working with companies, I saw people starting from zero becoming the best developers on the team, and also senior developers become useless. But what did happen to this people? How can a junior become an expert and those who are considered experts become outdated?
+There are some things I want to share with you.</description>
     </item>
     
   </channel>
