@@ -3,37 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://thelenilson.com/5-tips-that-will-make-you-a-better-developer/</loc>
+    <lastmod>2018-09-10T14:15:00-02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://thelenilson.com/about/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://thelenilson.com/5-tips-that-will-make-you-a-better-developer/</loc>
-  </url>
-  
-  <url>
     <loc>http://thelenilson.com/tags/development/</loc>
+    <lastmod>2018-09-10T14:15:00-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://thelenilson.com/</loc>
-    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <lastmod>2018-09-10T14:15:00-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://thelenilson.com/posts/</loc>
+    <lastmod>2018-09-10T14:15:00-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://thelenilson.com/tags/</loc>
+    <lastmod>2018-09-10T14:15:00-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://thelenilson.com/tags/tips/</loc>
+    <lastmod>2018-09-10T14:15:00-02:00</lastmod>
     <priority>0</priority>
   </url>
   
