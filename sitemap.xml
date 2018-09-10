@@ -3,41 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://lnlwd.github.io/5-tips-that-will-make-you-a-better-developer/</loc>
+    <loc>http://thelenilson.com/5-tips-that-will-make-you-a-better-developer/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://lnlwd.github.io/about/</loc>
+    <loc>http://thelenilson.com/about/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://lnlwd.github.io/tags/development/</loc>
-    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lnlwd.github.io/</loc>
+    <loc>http://thelenilson.com/tags/development/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lnlwd.github.io/posts/</loc>
+    <loc>http://thelenilson.com/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lnlwd.github.io/tags/</loc>
+    <loc>http://thelenilson.com/posts/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lnlwd.github.io/tags/tips/</loc>
+    <loc>http://thelenilson.com/tags/</loc>
+    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://thelenilson.com/tags/tips/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
     <priority>0</priority>
   </url>
