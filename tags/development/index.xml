@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lenilson Nascimento</title>
-    <link>http://lnlwd.github.io/</link>
-    <description>Recent content on Lenilson Nascimento</description>
+    <title>Development on Lenilson Nascimento</title>
+    <link>http://lnlwd.github.io/tags/development/</link>
+    <description>Recent content in Development on Lenilson Nascimento</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Jan 2018 16:16:15 -0200</lastBuildDate>
     
-	<atom:link href="http://lnlwd.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://lnlwd.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,21 +19,6 @@
       <guid>http://lnlwd.github.io/5-tips-that-will-make-you-a-better-developer/</guid>
       <description>Being a good developer is far away from just having technical skills or knowing well the language you code. In my career working with companies, I saw people starting from zero becoming the best developers on the team, and also senior developers become useless. But what did happen to this people? How can a junior become an expert and those who are considered experts become outdated?
 There are some things I want to share with you.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://lnlwd.github.io/about/</link>
-      <pubDate>Tue, 02 Jan 2018 16:16:15 -0200</pubDate>
-      
-      <guid>http://lnlwd.github.io/about/</guid>
-      <description>Hi there, that&amp;rsquo;s me.
-I&amp;rsquo;m a 23 years old developer living in Brazil.
-I have been an enthusiast my entire life and I love discover and share new things.
-In this website I will talk about anything in my mind, or anything that I&amp;rsquo;m working on, so you&amp;rsquo;ll read about everything here.
-That&amp;rsquo;s it. I&amp;rsquo;m glad you&amp;rsquo;re here!
-Contact info You can send me an email at lenilson.100@gmail.com
-Follow me on social networks:</description>
     </item>
     
   </channel>

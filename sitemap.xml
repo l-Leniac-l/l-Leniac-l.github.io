@@ -3,8 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lnlwd.github.io/5-tips-that-will-make-you-a-better-developer/</loc>
+    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lnlwd.github.io/about/</loc>
     <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lnlwd.github.io/tags/development/</loc>
+    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -14,7 +25,20 @@
   </url>
   
   <url>
+    <loc>http://lnlwd.github.io/posts/</loc>
+    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://lnlwd.github.io/tags/</loc>
+    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lnlwd.github.io/tags/tips/</loc>
+    <lastmod>2018-01-02T16:16:15-02:00</lastmod>
     <priority>0</priority>
   </url>
   
