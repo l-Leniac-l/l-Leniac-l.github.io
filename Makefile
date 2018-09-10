@@ -16,4 +16,4 @@ rebuild:
 	cd public && git commit -m "Rebuild github pages $(DATETIMENOW)" --allow-empty && git push origin master
 
 deploy:
-	rm -rf public/* && hugo && cd public && git add . && git commit -m "Deploy $(DATETIMENOW)" && git push origin master
+	rm -rf public/* && hugo && cd public && echo "thelenilson.com" > CNAME && git add . && git commit -m "Deploy $(DATETIMENOW)" && git push origin master

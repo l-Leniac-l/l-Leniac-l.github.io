@@ -1,6 +1,6 @@
 ---
 title: "5 tips that will make you a better developer"
-date: 2018-01-02T16:16:15-02:00
+date: 2018-09-10T14:00:00-03:00
 draft: false
 url: "/5-tips-that-will-make-you-a-better-developer"
 description: "Some tips to become a better developer that everyone should know about."
